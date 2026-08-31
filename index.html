@@ -29,6 +29,25 @@
     max-width:480px;margin:0 auto;background:linear-gradient(180deg,var(--mint-a),var(--mint-b) 30%,var(--mint-a) 60%,var(--cream) 100%);
     font-family:'Nunito',system-ui,sans-serif;color:var(--ink);overflow:hidden;
   }
+  /* Tablet / desktop: frame the mobile column as a centered card on a branded backdrop */
+  @media (min-width:560px){
+    body{
+      background:
+        radial-gradient(60vw 60vw at 12% 8%, rgba(96,190,80,.20), transparent 60%),
+        radial-gradient(55vw 55vw at 90% 22%, rgba(70,160,220,.20), transparent 60%),
+        radial-gradient(60vw 60vw at 82% 96%, rgba(255,180,60,.16), transparent 60%),
+        linear-gradient(180deg,#EAF5FD,#EFF6EE 55%,#FBFDF6);
+      background-attachment:fixed;
+      padding:28px 16px;
+    }
+    .page{
+      border-radius:30px;
+      box-shadow:0 30px 70px -20px rgba(24,60,45,.35), 0 8px 24px rgba(24,60,45,.14);
+    }
+    .offer-bar{border-radius:30px 30px 0 0;}
+    #hero{min-height:82vh!important;justify-content:center!important;padding-top:38px!important;}
+  }
+  @media (min-width:560px) and (max-width:900px){ body{padding:22px 14px;} }
   h1,h2,h3,.bubble{font-family:'Baloo 2','Nunito',system-ui,sans-serif;}
   a{color:var(--blue-deep);}
   a:hover{color:var(--navy);}
@@ -101,7 +120,7 @@ fbq('track', 'PageView');
 </div>
 
 <!-- ===== HERO ===== -->
-<div class="section" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#DCF1FB 0%,#E4F4F0 42%,#EFF8E6 100%);min-height:100svh;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:calc(env(safe-area-inset-top) + 20px) 0 22px;">
+<div id="hero" class="section" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#DCF1FB 0%,#E4F4F0 42%,#EFF8E6 100%);min-height:100svh;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-start;padding:calc(env(safe-area-inset-top) + 24px) 0 22px;">
   <div class="cloud" style="width:120px;height:58px;top:8%;left:-36px;"></div>
   <div class="cloud" style="width:80px;height:40px;top:20%;right:-18px;opacity:.5;"></div>
   <div class="cloud" style="width:64px;height:32px;top:5%;right:22%;opacity:.35;"></div>
