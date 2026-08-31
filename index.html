@@ -29,25 +29,10 @@
     max-width:480px;margin:0 auto;background:linear-gradient(180deg,var(--mint-a),var(--mint-b) 30%,var(--mint-a) 60%,var(--cream) 100%);
     font-family:'Nunito',system-ui,sans-serif;color:var(--ink);overflow:hidden;
   }
-  /* Tablet / desktop: frame the mobile column as a centered card on a branded backdrop */
+  /* Tablet / desktop: keep the column centered, a touch wider */
   @media (min-width:560px){
-    body{
-      background:
-        radial-gradient(60vw 60vw at 12% 8%, rgba(96,190,80,.20), transparent 60%),
-        radial-gradient(55vw 55vw at 90% 22%, rgba(70,160,220,.20), transparent 60%),
-        radial-gradient(60vw 60vw at 82% 96%, rgba(255,180,60,.16), transparent 60%),
-        linear-gradient(180deg,#EAF5FD,#EFF6EE 55%,#FBFDF6);
-      background-attachment:fixed;
-      padding:28px 16px;
-    }
-    .page{
-      border-radius:30px;
-      box-shadow:0 30px 70px -20px rgba(24,60,45,.35), 0 8px 24px rgba(24,60,45,.14);
-    }
-    .offer-bar{border-radius:30px 30px 0 0;}
-    #hero{min-height:82vh!important;justify-content:center!important;padding-top:38px!important;}
+    .page{max-width:520px;box-shadow:0 20px 60px -24px rgba(24,60,45,.25);}
   }
-  @media (min-width:560px) and (max-width:900px){ body{padding:22px 14px;} }
   h1,h2,h3,.bubble{font-family:'Baloo 2','Nunito',system-ui,sans-serif;}
   a{color:var(--blue-deep);}
   a:hover{color:var(--navy);}
@@ -120,27 +105,7 @@ fbq('track', 'PageView');
 </div>
 
 <!-- ===== HERO ===== -->
-<div id="hero" class="section" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#DCF1FB 0%,#E4F4F0 42%,#EFF8E6 100%);min-height:100svh;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-start;padding:calc(env(safe-area-inset-top) + 24px) 0 22px;">
-  <div class="cloud" style="width:120px;height:58px;top:8%;left:-36px;"></div>
-  <div class="cloud" style="width:80px;height:40px;top:20%;right:-18px;opacity:.5;"></div>
-  <div class="cloud" style="width:64px;height:32px;top:5%;right:22%;opacity:.35;"></div>
-  <svg viewBox="0 0 430 120" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;width:100%;height:88px;display:block;"><path d="M0 60 C 70 18 130 18 210 46 C 285 72 350 30 430 52 L430 120 L0 120 Z" fill="#8CCB5B"/><path d="M0 84 C 90 52 160 78 250 74 C 330 70 380 92 430 80 L430 120 L0 120 Z" fill="#72B93F"/></svg>
-  <div class="container" style="position:relative;text-align:center;">
-    <p style="font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--orange-deep);margin:0;font-size:clamp(19px,5.6vw,27px);line-height:1.08;text-shadow:0 2px 4px rgba(0,0,0,.1);">Que tu hijx aprenda a</p>
-
-    <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin:4px 0 0;">
-      <svg width="22" height="40" viewBox="0 0 20 36" aria-hidden="true"><g stroke="#5BC236" stroke-width="4.5" stroke-linecap="round"><path d="M16 6 6 12"/><path d="M17 18H4"/><path d="M16 30 6 24"/></g></svg>
-      <span style="font-family:'Baloo 2',sans-serif;font-weight:800;color:#1F8A45;font-size:clamp(54px,18vw,100px);line-height:.92;border-bottom:8px solid #166A38;padding-bottom:2px;text-shadow:0 3px 8px rgba(0,0,0,.16);">LEER</span>
-      <svg width="22" height="40" viewBox="0 0 20 36" aria-hidden="true"><g stroke="#5BC236" stroke-width="4.5" stroke-linecap="round"><path d="M4 6 14 12"/><path d="M3 18h13"/><path d="M4 30 14 24"/></g></svg>
-    </div>
-
-    <p style="font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--red);margin:9px 0 0;line-height:.9;text-shadow:0 3px 7px rgba(0,0,0,.14);"><span style="display:block;font-size:clamp(40px,13vw,68px);">10 VECES</span><span style="display:block;font-size:clamp(31px,10.5vw,52px);">M&Aacute;S R&Aacute;PIDO</span></p>
-    <p style="font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--green-deep);margin:9px 0 0;font-size:clamp(17px,5.1vw,23px);line-height:1.12;">jugando y divirti&eacute;ndose</p>
-    <p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);margin:3px 0 0;font-size:clamp(15px,4.4vw,20px);">con solo 10 minutos al d&iacute;a.</p>
-
-    <img src="producto-principal.png" alt="Metodo Lecturas Felices" style="display:block;width:54%;max-width:212px;height:auto;margin:12px auto 0;filter:drop-shadow(0 14px 20px rgba(20,50,60,.22));">
-  </div>
-</div>
+<img src="hero-lecturas.jpg" alt="Que tu hijx aprenda a leer 10 veces mas rapido jugando y divirtiendose, con solo 10 minutos al dia - Metodo Lecturas Felices" style="display:block;width:100%;height:auto;">
 
 <!-- ===== PAIN POINTS ===== -->
 <div class="section" style="background:#fff;padding-top:32px;">
