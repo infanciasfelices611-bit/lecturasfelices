@@ -18,7 +18,7 @@
 | **Bonos** | Mega Kit Escolar · Niños en Calma · Escribir Bonito, Crecer Seguro · Pequeños Mecánicos · Súper Alfabeto · Cuentos para Dormir Felices · Guía para Madres y Padres |
 | **Precio** | $38.000 → **$17.999** (pago único, para siempre, todos tus hijos) |
 
-**Para definir con Federico:** valores reales de cada bono · si hay un nº de ventas real para prueba social · garantía 7 o 30 días.
+**Para definir con Federico:** valores reales de cada bono · si hay un nº de ventas real para prueba social · garantía a 30 días (definido).
 
 ---
 ---
@@ -223,7 +223,7 @@ Lecturas Felices te da el paquete completo: **el material, el orden y las palabr
 - **Acceso desde cualquier lado** — celular, tablet o compu. Lo usás en casa o lo imprimís.
 - **Actualizaciones gratis de por vida** — todo lo nuevo te llega sin pagar de nuevo.
 - **Pedido de ficha a medida** — si te falta algo puntual, lo armamos.
-- **Garantía de 7 días** — sin vueltas.
+- **Garantía de 30 días** — sin vueltas.
 
 ---
 
@@ -296,7 +296,7 @@ Eso es un método de lectura completo por menos de lo que sale una salida a come
 | Regalo · Súper Alfabeto | ~~$12.000~~ gratis |
 | Regalo · Cuentos para Dormir Felices | ~~$10.000~~ gratis |
 | Regalo · La Guía para Madres y Padres | ~~$8.000~~ gratis |
-| Garantía de 7 días | incluida |
+| Garantía de 30 días | incluida |
 
 **Todo junto vale $118.000.**
 **Hoy lo pagás: $17.999.** Una sola vez.
@@ -306,7 +306,7 @@ Eso es un método de lectura completo por menos de lo que sale una salida a come
 
 ---
 
-## No digas "sí". Decí "quizás" y probalo 7 días sin riesgo.
+## No digas "sí". Decí "quizás" y probalo 30 días sin riesgo.
 
 Odiamos la palabra "garantía". La usan todos y ya no significa nada.
 
@@ -314,7 +314,7 @@ Así que esto no es una garantía. Es una promesa personal.
 
 ## Garantía "te gusta o te devuelvo la plata"
 
-Comprás, lo abrís y lo usás con tu hijo. Si en 7 días ves que no es para ustedes, me escribís un mail y te devuelvo el 100%.
+Comprás, lo abrís y lo usás con tu hijo. Si en 30 días ves que no es para ustedes, me escribís un mail y te devuelvo el 100%.
 
 Sin preguntas. Sin letra chica. Sin que tengas que explicar nada.
 
@@ -336,7 +336,7 @@ Apenas comprás, te llega el acceso por mail. No hay que esperar nada. En diez m
 
 ---
 
-**P.D.:** Acordate que tenés 7 días de garantía. Si por lo que sea no es para ustedes, te devuelvo todo. El riesgo lo pongo yo.
+**P.D.:** Acordate que tenés 30 días de garantía. Si por lo que sea no es para ustedes, te devuelvo todo. El riesgo lo pongo yo.
 
 **P.D. 2:** Este precio es por el lanzamiento. Cuando termine, no vas a poder volver a entrar a $17.999.
 
@@ -363,7 +363,7 @@ Sí. Tiene distintos niveles. Empieza donde está y sigue con lectura de frases,
 Si sabés leer, podés. Cada ficha te dice la frase exacta que tenés que decirle. No enseñás: acompañás.
 
 **¿Y si no me gusta?**
-Tenés 7 días. Escribís un mail y te devuelvo todo. Sin preguntas.
+Tenés 30 días. Escribís un mail y te devuelvo todo. Sin preguntas.
 
 ---
 
@@ -374,7 +374,7 @@ Tenés 7 días. Escribís un mail y te devuelvo todo. Sin preguntas.
 - Actualizaciones gratis de por vida
 - Pedido de ficha a medida
 - Los 7 regalos (valen $80.000)
-- Garantía de 7 días
+- Garantía de 30 días
 
 **Valor total: $118.000**
 **Hoy, pago único: $17.999**
@@ -402,7 +402,7 @@ El método completo de lectura para chicos de 2 a 11 años. Vos no tenés que sa
 
 [ **QUIERO EL MÉTODO ›› $17.999** ]
 
-Acceso al instante · Pago único · Garantía de 7 días
+Acceso al instante · Pago único · Garantía de 30 días
 
 ---
 
@@ -498,7 +498,7 @@ Pago único · ARS
 | +1500 fichas para imprimir | incluido |
 | Actualizaciones gratis de por vida | incluido |
 | Los 7 regalos | $80.000 |
-| Garantía de 7 días | incluida |
+| Garantía de 30 días | incluida |
 
 **Todo junto vale $118.000**
 **Hoy lo pagás: $17.999**
@@ -513,7 +513,7 @@ Un pago. Sin suscripción. Te llega al mail al toque.
 ## SECCIÓN 9 — GARANTÍA + FAQ
 
 **Garantía**
-Probalo 7 días con tu hijo. Si no es para ustedes, me escribís un mail y te devuelvo el 100%. Sin preguntas.
+Probalo 30 días con tu hijo. Si no es para ustedes, me escribís un mail y te devuelvo el 100%. Sin preguntas.
 
 **¿Cómo me llega?**
 Todo digital. Apenas pagás, te llega el acceso por mail. Lo abrís desde el celular, la tablet o la compu. Si querés, lo imprimís.
