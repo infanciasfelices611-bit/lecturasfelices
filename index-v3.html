@@ -88,6 +88,13 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .checkrow .ic{flex:none;font-size:17px;line-height:1.4;}
   #lf3 .checkrow.yes{font-weight:700;border-top:1px solid var(--line);margin-top:6px;padding-top:15px;}
 
+  /* beneficios */
+  #lf3 .ben{background:var(--cream);}
+  #lf3 .ben .checkbox{border-left-color:var(--green);}
+
+  /* trust strip */
+  #lf3 .trust-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;margin-top:14px;font-size:12px;font-weight:700;color:var(--gray);}
+
   /* solution */
   #lf3 .sol{background:var(--cream);text-align:center;}
   #lf3 .sol .trans{font-size:16px;color:var(--gray);max-width:46ch;margin:0 auto 22px;font-weight:500;}
@@ -140,6 +147,7 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .bon-val b{color:var(--accent-d);}
   #lf3 .bon-total{background:var(--ink);color:var(--cream);border-radius:14px;padding:18px;text-align:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:16px;margin-top:4px;}
   #lf3 .bon-total b{color:var(--accent);}
+  #lf3 .bon-sub{display:block;font-size:11px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:0.04em;margin:-3px 0 7px;}
 
   /* social */
   #lf3 .soc{background:var(--cream);}
@@ -179,6 +187,17 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .faq-item.open .faq-a{max-height:260px;}
 
   /* footer */
+  /* cierre */
+  #lf3 .close{text-align:center;}
+  #lf3 .close-list{list-style:none;text-align:left;max-width:400px;margin:0 auto 20px;}
+  #lf3 .close-list li{padding:9px 0;font-size:14px;color:#eef0e8;border-bottom:1px solid rgba(255,255,255,0.1);}
+  #lf3 .close-list li:last-child{border-bottom:none;}
+  #lf3 .close-price{display:flex;justify-content:center;align-items:baseline;gap:12px;margin-bottom:6px;}
+  #lf3 .close-price .was{font-size:14px;color:#a7ad9f;text-decoration:line-through;text-decoration-color:var(--accent);font-weight:600;}
+  #lf3 .close-price .now{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(26px,7vw,36px);color:var(--accent);}
+  #lf3 .close-ps{font-size:12.5px;color:#c8cdc4;max-width:44ch;margin:16px auto 0;line-height:1.6;}
+  #lf3 .close-ps b{color:var(--white);}
+
   #lf3 footer{background:var(--ink-d);color:#9aa393;text-align:center;padding:26px 20px;font-size:12px;line-height:1.7;}
 
   /* sticky — barra de ancho completo, pegada abajo */
@@ -229,6 +248,21 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   </div>
 </section>
 
+<!-- ============ 2b · BENEFICIOS ============ -->
+<section class="ben">
+  <div class="wrap">
+    <div class="kicker">Lo que vas a ver</div>
+    <h2>Cómo cambia en unas semanas</h2>
+    <div class="checkbox">
+      <div class="checkrow"><span class="ic">&#9989;</span> Se sienta a leer sin que se lo pidas dos veces. Y no llora.</div>
+      <div class="checkrow"><span class="ic">&#9989;</span> Reconoce los sonidos y arma sílabas que antes no podía.</div>
+      <div class="checkrow"><span class="ic">&#9989;</span> Lee sus primeras palabras solo y se pone re contento.</div>
+      <div class="checkrow"><span class="ic">&#9989;</span> Deja de decir que es "malo para leer". Se anima más.</div>
+      <div class="checkrow"><span class="ic">&#9989;</span> Vos dejás de pelear con la tarea y de gastar en cosas que no le sirven.</div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ 3 · SOLUCIÓN ============ -->
 <section class="sol">
   <div class="wrap">
@@ -246,15 +280,15 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
 
     <div class="p3-item">
       <div class="p3-n">1</div>
-      <div><h3>Te dice qué hacer y qué decir</h3><p>Cada ficha viene con la instrucción para vos: qué mostrarle, qué decirle, qué hacer si se traba. No enseñás. Seguís el paso a paso.</p></div>
+      <div><h3>Te dice qué hacer y qué decir</h3><p>Cada ficha trae la instrucción para vos y el orden correcto: sonido, sílaba, palabra, frase, cuento. No enseñás. Seguís el paso a paso.</p></div>
     </div>
     <div class="p3-item">
       <div class="p3-n">2</div>
-      <div><h3>Un solo camino, en el orden correcto</h3><p>Sonido, sílaba, palabra, frase, cuento. En el orden en que un chico aprende a leer de verdad. Sin saltar pasos.</p></div>
+      <div><h3>Te ahorra la particular</h3><p>Una hora de clases particulares te sale $15.000. Esto te dura toda la primaria, lo usás con todos tus hijos y se paga una sola vez.</p></div>
     </div>
     <div class="p3-item">
       <div class="p3-n">3</div>
-      <div><h3>+1500 fichas, repetís lo que quieras</h3><p>¿Le costó una sílaba? Imprimís tres fichas más. Sin comprar nada nuevo. Y lo usás con todos tus hijos.</p></div>
+      <div><h3>+1500 fichas, repetís lo que quieras</h3><p>¿Le costó una sílaba? Imprimís tres fichas más. Sin comprar nada nuevo. Nunca te quedás sin material.</p></div>
     </div>
 
     <div class="p3-video">
@@ -294,6 +328,11 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
 
     <a href="https://infancias-felices.impultienda.ar/" class="cta" onclick="if(window.fbq){fbq('track','AddToCart');fbq('track','InitiateCheckout');}">Quiero el método &rsaquo;&rsaquo; $17.999</a>
 
+    <div class="trust-strip">
+      <span>&#128274; Pago 100% seguro</span>
+      <span>&#9889; Acceso al instante</span>
+      <span>&#128737;&#65039; Garantía 30 días</span>
+    </div>
     <div class="pays">
       <span class="pay">VISA</span>
       <span class="pay">Mastercard</span>
@@ -310,43 +349,43 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
 
     <div class="bon-card">
       <img src="bonus1-megakit.jpg" alt="Mega Kit Escolar" loading="lazy">
-      <h3>Mega Kit Escolar</h3>
+      <h3>Mil Fichas Listas</h3><span class="bon-sub">Mega Kit Escolar</span>
       <p>Más de 1000 fichas para imprimir: lectura, atención, lenguaje y lógica, de 2 a 11 años.</p>
       <div class="bon-val"><s>$15.000</s> <b>HOY GRATIS</b></div>
     </div>
     <div class="bon-card">
       <img src="bonus2-calma.jpg" alt="Niños en Calma" loading="lazy">
-      <h3>Niños en Calma</h3>
+      <h3>Kit Cero Berrinches</h3><span class="bon-sub">Niños en Calma</span>
       <p>Rutinas y juegos que bajan los berrinches y ayudan a que se concentre. Va bien con chicos con TDAH.</p>
       <div class="bon-val"><s>$12.000</s> <b>HOY GRATIS</b></div>
     </div>
     <div class="bon-card">
       <img src="bonus3-escribir.jpg" alt="Escribir bonito, crecer seguro" loading="lazy">
-      <h3>Escribir Bonito, Crecer Seguro</h3>
+      <h3>Letra Clara en 3 Semanas</h3><span class="bon-sub">Escribir Bonito, Crecer Seguro</span>
       <p>Trazos de menos a más para mejorar el pulso, el agarre del lápiz y la letra.</p>
       <div class="bon-val"><s>$13.000</s> <b>HOY GRATIS</b></div>
     </div>
     <div class="bon-card">
       <img src="bonus4-mecanicos.jpg" alt="Pequeños Mecánicos" loading="lazy">
-      <h3>Pequeños Mecánicos</h3>
+      <h3>Curiosos por Dentro</h3><span class="bon-sub">Pequeños Mecánicos</span>
       <p>Cómo funciona un auto por dentro, contado fácil. Con juegos, para colorear y desafíos.</p>
       <div class="bon-val"><s>$10.000</s> <b>HOY GRATIS</b></div>
     </div>
     <div class="bon-card">
       <img src="bonus5-alfabeto.jpg" alt="Súper Alfabeto" loading="lazy">
-      <h3>Súper Alfabeto</h3>
-      <p>Juegos para dominar las letras, la memoria visual y sumar palabras nuevas. Incluye Kit de Lenguaje.</p>
+      <h3>Dominá el Abecedario</h3><span class="bon-sub">Súper Alfabeto + Kit de Lenguaje</span>
+      <p>Juegos para dominar las letras, la memoria visual y sumar palabras nuevas.</p>
       <div class="bon-val"><s>$12.000</s> <b>HOY GRATIS</b></div>
     </div>
     <div class="bon-card">
       <img src="bonus6-cuentos.jpg" alt="Cuentos para dormir felices" loading="lazy">
-      <h3>40 Cuentos para Dormir</h3>
-      <p>Más de 40 cuentos ilustrados con valores. Le van a dar ganas de que sea la hora de dormir.</p>
+      <h3>40 Cuentos para Dormir</h3><span class="bon-sub">Ilustrados y con valores</span>
+      <p>Más de 40 cuentos. Le van a dar ganas de que sea la hora de dormir.</p>
       <div class="bon-val"><s>$10.000</s> <b>HOY GRATIS</b></div>
     </div>
     <div class="bon-card">
       <img src="bonus7-guia.jpg" alt="La guía para madres y padres" loading="lazy">
-      <h3>Guía para Madres y Padres</h3>
+      <h3>Semana Ordenada</h3><span class="bon-sub">Guía para Madres y Padres</span>
       <p>Planes de una semana para trabajar atención, conducta y lenguaje en casa, sin volverte loca.</p>
       <div class="bon-val"><s>$8.000</s> <b>HOY GRATIS</b></div>
     </div>
@@ -429,6 +468,29 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
       <div class="faq-q">¿Es pago único?</div>
       <div class="faq-a"><p>Sí. Pagás $17.999 una sola vez y es tuyo para siempre. Sin suscripción ni cargos después. Lo usás con todos tus hijos.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ 10 · CIERRE ============ -->
+<section class="dark close">
+  <div class="wrap">
+    <div class="kicker">Última vez</div>
+    <h2>Esto es todo lo que te llevás hoy</h2>
+    <ul class="close-list">
+      <li>&#10003; Método completo Lecturas Felices — 8 etapas + paso a paso</li>
+      <li>&#10003; +1500 fichas para imprimir</li>
+      <li>&#10003; Los 7 regalos (por separado valen $80.000)</li>
+      <li>&#10003; Actualizaciones gratis de por vida</li>
+      <li>&#10003; Todo digital — te llega al mail al instante</li>
+      <li>&#10003; Un solo pago. Sin suscripción. Para siempre</li>
+      <li>&#10003; Garantía de 30 días</li>
+    </ul>
+    <div class="close-price">
+      <span class="was">Vale $118.000</span>
+      <span class="now">Hoy: $17.999</span>
+    </div>
+    <a href="https://infancias-felices.impultienda.ar/" class="cta" onclick="if(window.fbq){fbq('track','AddToCart');fbq('track','InitiateCheckout');}">Empezar ahora &rsaquo;&rsaquo; $17.999</a>
+    <p class="close-ps"><b>P.D.:</b> el riesgo lo pongo yo. Probalo 30 días. Si no es para ustedes, te devuelvo todo, sin preguntas. Y si esperás, cuando cierre el lanzamiento pagás $38.000.</p>
   </div>
 </section>
 
