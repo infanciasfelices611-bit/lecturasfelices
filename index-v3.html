@@ -181,13 +181,16 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   /* footer */
   #lf3 footer{background:var(--ink-d);color:#9aa393;text-align:center;padding:26px 20px;font-size:12px;line-height:1.7;}
 
-  /* sticky */
+  /* sticky — barra de ancho completo, pegada abajo */
   #lf3 .sticky{
-    position:fixed;left:50%;transform:translateX(-50%);
-    bottom:12px;bottom:max(12px,env(safe-area-inset-bottom));
-    z-index:400;width:min(440px,calc(100% - 24px));margin:0;
-    display:none;padding:16px 20px;font-size:15px;border-radius:13px;
+    position:fixed;left:0;right:0;bottom:0;
+    z-index:400;width:100%;max-width:none;margin:0;
+    display:none;border-radius:0;animation:none;font-size:15px;
+    padding:15px 20px;
+    padding-bottom:calc(15px + env(safe-area-inset-bottom));
+    box-shadow:0 -6px 22px -6px rgba(0,0,0,0.28);
   }
+  #lf3 .sticky:hover{transform:none;}
   #lf3 .sticky.show{display:block;}
 </style>
 </head>
