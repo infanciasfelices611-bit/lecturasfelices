@@ -60,6 +60,17 @@
   .row{display:flex;gap:14px;align-items:flex-start;}
   .label-sm{font-size:12px;font-weight:800;color:var(--ink-soft);letter-spacing:.3px;text-transform:uppercase;margin:0 0 2px;}
   .label-lg{font-size:16px;font-weight:800;color:var(--navy);line-height:1.28;margin:0;}
+  .pain-copy .label-sm,.pain-copy .label-lg{color:var(--red);}
+  .benefit-copy{color:var(--green-deep);}
+  .benefit-title{color:var(--green-deep);}
+  .hero-price{background:var(--cream);padding:18px 20px 22px;text-align:center;border-bottom:1px solid rgba(23,56,100,.08);}
+  .hero-price .price-now{display:block;margin:2px 0 10px;font-size:28px;font-weight:900;color:var(--navy);}
+  .sticky-cta{display:none;position:fixed;left:50%;bottom:12px;z-index:250;width:min(440px,calc(100% - 28px));transform:translateX(-50%);padding:13px 16px;border-radius:14px;}
+  .sticky-cta.is-visible{display:flex;}
+  .guarantee-card{display:flex;align-items:flex-start;gap:12px;background:linear-gradient(120deg,#E7F6EC,#fff);border:1px solid #BDE5C8;border-radius:14px;padding:16px;margin-top:12px;}
+  .guarantee-card svg{flex:none;margin-top:1px;}
+  .guarantee-card p{margin:0;color:var(--ink-soft);font-size:13px;line-height:1.45;}
+  .guarantee-card strong{display:block;margin-bottom:3px;color:var(--green-deep);font-size:15px;}
   .check-row{display:flex;gap:10px;align-items:flex-start;margin:0 0 10px;}
   .check-row svg{flex:none;margin-top:2px;}
   .check-row p{margin:0;font-weight:800;font-size:13.5px;color:var(--green-deep);line-height:1.35;}
@@ -81,6 +92,8 @@
   .pack-box .content{position:relative;padding:16px 16px 14px 24px;height:100%;display:flex;flex-direction:column;}
   .pack-title{font-family:'Baloo 2';font-weight:800;color:#fff;text-shadow:2px 2px 0 rgba(0,20,40,.28);line-height:1.08;}
   .pay-badge{display:flex;align-items:center;justify-content:center;height:26px;padding:0 9px;border-radius:6px;font-family:'Baloo 2';font-weight:800;font-size:10px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.15);}
+  .mp-badge{gap:5px;color:#009EE3;font-family:'Nunito';font-size:10px;font-weight:900;letter-spacing:-.2px;}
+  .mp-badge img{width:22px;height:16px;display:block;object-fit:contain;}
   .cloud{position:absolute;background:#fff;border-radius:50%;opacity:.55;}
   .book-pages{position:absolute;right:-6px;top:5px;bottom:5px;width:11px;border-radius:0 6px 6px 0;background:repeating-linear-gradient(180deg,#FFFDF6,#FFFDF6 2px,#E7E1D2 2px,#E7E1D2 3px);box-shadow:2px 2px 6px rgba(15,50,40,.2);}
 </style>
@@ -101,11 +114,18 @@ fbq('track', 'PageView');
 <body>
 <div class="page">
 <div class="offer-bar" style="position:sticky;top:0;z-index:200;background:linear-gradient(90deg,#E64A3B,#E8317E);color:#fff;text-align:center;padding:9px 12px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13px;letter-spacing:.4px;box-shadow:0 2px 10px rgba(0,0,0,.18);">
-  &#9200; OFERTA LIMITADA &middot; TERMINA EN <span id="bar-timer" style="font-variant-numeric:tabular-nums;">20:00</span>
+  &#9200; OFERTA DE LANZAMIENTO &middot; TERMINA EN <span id="bar-timer" style="font-variant-numeric:tabular-nums;">20:00</span>
 </div>
 
 <!-- ===== HERO ===== -->
-<img src="hero-lecturas.jpg" alt="Que tu hijx aprenda a leer 10 veces mas rapido jugando y divirtiendose, con solo 10 minutos al dia - Metodo Lecturas Felices" style="display:block;width:100%;height:100vh;height:min(100svh,172vw,880px);object-fit:cover;object-position:50% 20%;">
+<img id="hero-image" src="hero-lecturas.jpg" alt="Que tu hijx aprenda a leer 10 veces mas rapido jugando y divirtiendose, con solo 10 minutos al dia - Metodo Lecturas Felices" style="display:block;width:100%;height:100vh;height:min(100svh,172vw,880px);object-fit:cover;object-position:50% 20%;">
+
+<div class="hero-price">
+  <p style="margin:0 0 2px;font-size:13px;font-weight:800;color:var(--green-deep);">PACK PREMIUM + 7 BONUS DE REGALO</p>
+  <span class="price-now">$17.999,00 ARS</span>
+  <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el pack</a>
+</div>
+<a id="sticky-cta" class="btn-green sticky-cta" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el pack</a>
 
 <!-- ===== PAIN POINTS ===== -->
 <div class="section" style="background:#fff;padding-top:32px;">
@@ -117,25 +137,25 @@ fbq('track', 'PageView');
         <div class="icon-circ" style="background:#FFE4EC;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--pink-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-1 1-2 2-2h5v16H6c-1 0-2 1-2 2V5z"/><path d="M20 5c0-1-1-2-2-2h-5v16h5c1 0 2 1 2 2V5z"/></svg>
         </div>
-        <div><p class="label-sm">Se frustra cuando no puede</p><p class="label-lg">LEER O ESCRIBIR BIEN</p></div>
+        <div class="pain-copy"><p class="label-sm">Se frustra cuando no puede</p><p class="label-lg">LEER O ESCRIBIR BIEN</p></div>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#E9E4FF;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7458D6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h3a2 2 0 1 1 4 0h3a1.5 1.5 0 0 1 1.5 1.5v3a2 2 0 1 1 0 4v3A1.5 1.5 0 0 1 18 17h-3a2 2 0 1 1-4 0H8a1.5 1.5 0 0 1-1.5-1.5v-3a2 2 0 1 0 0-4v-3A1.5 1.5 0 0 1 8 4z"/></svg>
         </div>
-        <div><p class="label-sm">Se siente "menos inteligente"</p><p class="label-lg">QUE SUS COMPAÑERITOS</p></div>
+        <div class="pain-copy"><p class="label-sm">Se siente "menos inteligente"</p><p class="label-lg">QUE SUS COMPAÑERITOS</p></div>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#FFF3D0;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--orange-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .9 1.7l.1.5h5.2l.1-.5c.1-.7.4-1.3.9-1.7A6 6 0 0 0 12 3z"/></svg>
         </div>
-        <div><p class="label-sm">Querés ayudar, pero no sabés</p><p class="label-lg">POR DÓNDE EMPEZAR SIN PRESIONAR</p></div>
+        <div class="pain-copy"><p class="label-sm">Querés ayudar, pero no sabés</p><p class="label-lg">POR DÓNDE EMPEZAR SIN PRESIONAR</p></div>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#DDEEFC;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 15.5s1.2-1.5 3.5-1.5 3.5 1.5 3.5 1.5"/><circle cx="9" cy="10" r="1" fill="var(--blue-deep)" stroke="none"/><circle cx="15" cy="10" r="1" fill="var(--blue-deep)" stroke="none"/></svg>
         </div>
-        <div><p class="label-sm">Y lo peor: empieza a pensar</p><p class="label-lg">QUE NO ES CAPAZ</p></div>
+        <div class="pain-copy"><p class="label-sm">Y lo peor: empieza a pensar</p><p class="label-lg">QUE NO ES CAPAZ</p></div>
       </div>
     </div>
 
@@ -210,37 +230,37 @@ fbq('track', 'PageView');
 <!-- ===== BENEFITS ===== -->
 <div class="section" style="background:linear-gradient(180deg,#fff,var(--mint-a));padding-top:32px;">
   <div class="container">
-    <h2 class="section-title">¿QUÉ VA A LOGRAR<br>TU HIJO?</h2>
+    <h2 class="section-title benefit-title">¿QUÉ VA A LOGRAR<br>TU HIJO?</h2>
     <div style="display:flex;flex-direction:column;gap:18px;">
       <div class="row">
         <div class="icon-circ" style="background:#FFE4EC;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--pink-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-1 1-2 2-2h5v16H6c-1 0-2 1-2 2V5z"/><path d="M20 5c0-1-1-2-2-2h-5v16h5c1 0 2 1 2 2V5z"/><path d="M12 20l1-19 1 19" stroke="none" fill="none"/></svg>
         </div>
-        <p class="label-lg">Sentirá curiosidad y<br>ganas de leer cada día</p>
+        <p class="label-lg benefit-copy">Sentirá curiosidad y<br>ganas de leer cada día</p>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#E9E4FF;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7458D6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h3a2 2 0 1 1 4 0h3a1.5 1.5 0 0 1 1.5 1.5v3a2 2 0 1 1 0 4v3A1.5 1.5 0 0 1 18 17h-3a2 2 0 1 1-4 0H8a1.5 1.5 0 0 1-1.5-1.5v-3a2 2 0 1 0 0-4v-3A1.5 1.5 0 0 1 8 4z"/></svg>
         </div>
-        <p class="label-lg">Desarrollará su inteligencia,<br>memoria y capacidad intelectual</p>
+        <p class="label-lg benefit-copy">Desarrollará su inteligencia,<br>memoria y capacidad intelectual</p>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#FDECD2;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--orange-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12"/><path d="M6 21h12"/><path d="M7 3c0 5 5 6 5 9s-5 4-5 9"/><path d="M17 3c0 5-5 6-5 9s5 4 5 9"/></svg>
         </div>
-        <p class="label-lg">Aprenderá con calma,<br>sin frustraciones</p>
+        <p class="label-lg benefit-copy">Aprenderá con calma,<br>sin frustraciones</p>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#FFF3D0;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sun-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .9 1.7l.1.5h5.2l.1-.5c.1-.7.4-1.3.9-1.7A6 6 0 0 0 12 3z"/></svg>
         </div>
-        <p class="label-lg">Volverá a confiar en su mente<br>y en todo lo que es capaz de aprender</p>
+        <p class="label-lg benefit-copy">Volverá a confiar en su mente<br>y en todo lo que es capaz de aprender</p>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#DDEEFC;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-9.3-8.8C1.3 8 2.6 4.8 5.6 4.1 7.6 3.6 9.6 4.4 12 7c2.4-2.6 4.4-3.4 6.4-2.9 3 .7 4.3 3.9 2.9 7.1C19 15.6 12 20 12 20z"/><rect x="15.5" y="9" width="6" height="9" rx="1.4" fill="#fff" stroke="var(--blue-deep)"/><path d="M17 15.3h3" stroke-width="1.3"/></svg>
         </div>
-        <p class="label-lg">Pasará menos tiempo en pantalla<br>y estará más conectado con vos</p>
+        <p class="label-lg benefit-copy">Pasará menos tiempo en pantalla<br>y estará más conectado con vos</p>
       </div>
     </div>
   </div>
@@ -251,7 +271,7 @@ fbq('track', 'PageView');
   <div class="container">
     <img src="producto-principal.png" alt="Metodo Lecturas Felices - Aprender a leer nunca fue tan divertido" style="display:block;width:230px;max-width:80%;height:auto;margin:0 auto;">
 
-    <p style="margin:16px 0 4px;font-size:12px;color:var(--ink-soft);">+1521 descargas</p>
+    <p style="margin:16px 0 4px;font-size:12px;color:var(--ink-soft);">Acceso inmediato + 7 bonus de regalo</p>
     <p style="margin:0 0 6px;font-weight:800;font-size:16px;color:var(--navy);">Pack Premium Grafismo Fonético + 7 Bonus 🎁</p>
     <div class="stars" style="display:flex;justify-content:center;gap:2px;margin-bottom:10px;">
       <svg viewBox="0 0 24 24" fill="#FFC531"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg>
@@ -262,7 +282,7 @@ fbq('track', 'PageView');
       <span style="font-size:12px;color:var(--ink-soft);margin-left:4px;align-self:center;">5/5</span>
     </div>
     <p style="margin:0 0 12px;"><span style="text-decoration:line-through;color:#9AA;font-size:14px;">$38.000,00 ARS</span> &nbsp; <span style="font-weight:800;font-size:22px;color:var(--navy);">$17.999,00 ARS</span></p>
-    <span class="pill">🔥 Oferta -50% OFF &nbsp;Sólo 20 cupos</span>
+    <span class="pill">🔥 Oferta de lanzamiento -50% OFF</span>
   </div>
 </div>
 
@@ -270,11 +290,11 @@ fbq('track', 'PageView');
 <div class="section" style="padding-top:22px;">
   <div class="container">
     <div class="card" style="background:linear-gradient(180deg,#123B24,#0C2A19);padding:20px;color:#fff;">
-      <p style="margin:0 0 6px;text-align:center;font-family:'Baloo 2';font-weight:800;font-size:16px;">OFERTA <u>HOY <span id="dayName">VIERNES</span></u>!!!</p>
+      <p style="margin:0 0 6px;text-align:center;font-family:'Baloo 2';font-weight:800;font-size:16px;">OFERTA DE LANZAMIENTO</p>
       <p style="margin:0 0 16px;text-align:center;font-size:11.5px;color:rgba(255,255,255,.65);line-height:1.5;">Tu lugar estará reservado durante <u>20 minutos</u>. En caso de no acceder, se cederá el descuento a la siguiente persona.</p>
       <p id="timer" style="margin:0;text-align:center;font-family:'Baloo 2';font-weight:700;font-size:34px;letter-spacing:2px;">20 : 00</p>
       <p style="margin:0 0 16px;text-align:center;font-size:10px;color:rgba(255,255,255,.55);letter-spacing:2px;">MINUTOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEGUNDOS</p>
-      <p style="margin:0 0 14px;text-align:center;font-weight:800;color:#FFD43B;font-size:13px;">⚡ Últimos 3 Cupos en Oferta!</p>
+      <p style="margin:0 0 14px;text-align:center;font-weight:800;color:#FFD43B;font-size:13px;">⚡ Precio especial de lanzamiento</p>
 
       <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Agregar al carrito</a>
 
@@ -283,18 +303,13 @@ fbq('track', 'PageView');
         <span class="pay-badge" style="color:#1A1F71;">VISA</span>
         <span class="pay-badge"><svg width="26" height="16" viewBox="0 0 26 16"><circle cx="10" cy="8" r="7" fill="#EB001B"/><circle cx="16" cy="8" r="7" fill="#F79E1B" opacity=".85"/></svg></span>
         <span class="pay-badge" style="color:#0F5EA8;">Maestro</span>
-        <span class="pay-badge" style="color:#00A3E0;">Mercado Pago</span>
+        <span class="pay-badge mp-badge"><img src="mpimages.jpeg" alt="">Mercado Pago</span>
       </div>
     </div>
 
-    <div class="faq-item" id="guarantee" style="margin-top:12px;">
-      <div class="faq-q" onclick="document.getElementById('guarantee').classList.toggle('open')">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFC531"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg>
-        <span>GARANTÍA MAMÁ TRANQUILA</span>
-        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ink-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-      </div>
-      <div class="faq-a"><p>Si en 7 días sentís que no era para vos, te devolvemos el 100% de tu dinero, sin vueltas ni preguntas.</p></div>
+    <div class="guarantee-card">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg>
+      <p><strong>GARANTÍA MAMÁ TRANQUILA</strong>Si en 7 días sentís que no era para vos, te devolvemos el 100% de tu dinero, sin vueltas ni preguntas.</p>
     </div>
 
     <div class="card" style="margin-top:14px;background:linear-gradient(120deg,#FFEDA8,#C9F0DC);padding:16px;display:flex;align-items:center;gap:12px;">
@@ -381,7 +396,7 @@ fbq('track', 'PageView');
 
     <p style="margin:0 0 2px;font-weight:800;color:var(--ink-soft);font-size:13px;letter-spacing:.3px;">VALOR TOTAL 7 BONUS</p>
     <p style="margin:0 0 4px;font-size:20px;color:#B5433C;text-decoration:line-through;">$79.999</p>
-    <p style="margin:0;font-weight:800;color:var(--green-deep);font-size:15px;">SOLO POR HOY</p>
+    <p style="margin:0;font-weight:800;color:var(--green-deep);font-size:15px;">PRECIO ESPECIAL DE LANZAMIENTO</p>
     <p style="margin:0 0 16px;font-family:'Baloo 2';font-weight:800;color:var(--red);font-size:44px;">GRATIS</p>
 
     <p style="margin:0 0 12px;font-size:12px;color:var(--ink-soft);">📧 Acceso inmediato a tu mail</p>
@@ -393,7 +408,7 @@ fbq('track', 'PageView');
       <span class="pay-badge" style="color:#1A1F71;border:1px solid #eee;">VISA</span>
       <span class="pay-badge" style="border:1px solid #eee;"><svg width="26" height="16" viewBox="0 0 26 16"><circle cx="10" cy="8" r="7" fill="#EB001B"/><circle cx="16" cy="8" r="7" fill="#F79E1B" opacity=".85"/></svg></span>
       <span class="pay-badge" style="color:#0F5EA8;border:1px solid #eee;">Maestro</span>
-      <span class="pay-badge" style="color:#00A3E0;border:1px solid #eee;">Mercado Pago</span>
+      <span class="pay-badge mp-badge" style="border:1px solid #eee;"><img src="mpimages.jpeg" alt="">Mercado Pago</span>
     </div>
   </div>
 </div>
@@ -529,9 +544,13 @@ fbq('track', 'PageView');
 </div>
 <script>
 (function(){
-  var dias = ['DOMINGO','LUNES','MARTES','MIÉRCOLES','JUEVES','VIERNES','SÁBADO'];
-  var dayEl = document.getElementById('dayName');
-  if (dayEl) dayEl.textContent = dias[new Date().getDay()];
+  var hero = document.getElementById('hero-image');
+  var stickyCta = document.getElementById('sticky-cta');
+  function updateStickyCta(){
+    if (stickyCta && hero) stickyCta.classList.toggle('is-visible', window.scrollY >= hero.offsetTop + hero.offsetHeight);
+  }
+  window.addEventListener('scroll', updateStickyCta, {passive:true});
+  updateStickyCta();
 
   var t = 1200;
   var el = document.getElementById('timer');
