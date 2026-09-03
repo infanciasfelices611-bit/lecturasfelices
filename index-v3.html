@@ -36,9 +36,13 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   html,body{margin:0;padding:0;overflow-x:hidden;}
   #lf3 *{margin:0;padding:0;box-sizing:border-box;}
   #lf3{
-    --ink:#23372B;--ink-d:#182619;--accent:#E8920C;--accent-d:#C4780A;
-    --danger:#CF4B39;--green:#3E7D4F;--cream:#FDFBF4;--white:#fff;
-    --gray:#5B655D;--line:#E6E1D1;
+    /* Paleta cálida infantil-lectura: crema + azul libro + amarillo sol + coral */
+    --ink:#1E2A44;--ink-d:#16203A;--accent:#F5B301;--accent-d:#D99A00;
+    --blue:#2E6BB8;--blue-d:#245A9E;
+    --danger:#D14836;--danger-lt:#FF9587;
+    --green:#3E8E5A;--green-d:#2F7A48;--green-lt:#BFE8CE;
+    --cream:#FDFBF7;--white:#fff;
+    --gray:#5B6274;--line:#E4E7EE;
     font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);
     -webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6;
   }
@@ -47,7 +51,7 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .wrap{max-width:640px;margin:0 auto;}
   #lf3 h1,#lf3 h2,#lf3 h3{font-family:'Poppins',sans-serif;color:var(--ink);letter-spacing:-0.01em;line-height:1.15;}
   #lf3 h2{font-size:clamp(23px,5vw,32px);font-weight:800;text-align:center;margin-bottom:22px;text-transform:uppercase;}
-  #lf3 .kicker{text-align:center;font-size:12px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-d);margin-bottom:12px;}
+  #lf3 .kicker{text-align:center;font-size:12px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-d);margin-bottom:12px;}
   #lf3 .dark{background:var(--ink);color:var(--cream);}
   #lf3 .dark h2,#lf3 .dark h3{color:var(--white);}
   #lf3 .dark .kicker{color:var(--accent);}
@@ -55,10 +59,10 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   /* CTA */
   #lf3 .cta{
     display:block;width:100%;max-width:440px;margin:22px auto 0;
-    background:var(--accent);color:#3a2600;text-decoration:none;text-align:center;
+    background:var(--accent);color:var(--ink);text-decoration:none;text-align:center;
     font-family:'Poppins',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:0.01em;
     padding:19px 22px;border-radius:14px;border:none;cursor:pointer;
-    box-shadow:0 10px 26px -8px rgba(232,146,12,0.55);
+    box-shadow:0 10px 26px -8px rgba(245,179,1,0.55);
     animation:lf3pulse 2.2s ease-in-out infinite;
     transition:transform .2s ease,background .2s ease;
   }
@@ -75,7 +79,7 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .hero-bar b{color:var(--accent);}
   #lf3 .hero-in{max-width:640px;margin:0 auto;padding:30px 20px 0;}
   #lf3 .hero h1{font-size:clamp(25px,6vw,40px);font-weight:800;text-transform:uppercase;margin-bottom:12px;}
-  #lf3 .hero h1 span{color:var(--accent-d);}
+  #lf3 .hero h1 span{color:var(--blue-d);}
   #lf3 .hero p.lead{font-size:15.5px;color:var(--gray);font-weight:500;max-width:44ch;margin:0 auto 20px;}
   #lf3 .hero-media{margin:0 auto 4px;text-align:center;}
   #lf3 .hero-media img{max-height:300px;width:auto;margin:0 auto;filter:drop-shadow(0 16px 30px rgba(35,55,43,0.28));}
@@ -92,6 +96,13 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .ben{background:var(--cream);}
   #lf3 .ben .checkbox{border-left-color:var(--green);}
 
+  /* dolores en rojo · beneficios en verde */
+  #lf3 .pain{background:#FFF4F1;}
+  #lf3 .pain .checkbox{border-left-color:var(--danger);}
+  #lf3 .pain .checkbox .checkrow{color:var(--danger);font-weight:600;}
+  #lf3 .pain .checkbox .checkrow.yes{color:var(--green-d);border-top-color:#f0d9d3;}
+  #lf3 .ben .checkbox .checkrow{color:var(--green-d);}
+
   /* trust strip */
   #lf3 .trust-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;margin-top:14px;font-size:12px;font-weight:700;color:var(--gray);}
 
@@ -99,7 +110,7 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .sol{background:var(--cream);text-align:center;}
   #lf3 .sol .trans{font-size:16px;color:var(--gray);max-width:46ch;margin:0 auto 22px;font-weight:500;}
   #lf3 .sol .name{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(30px,8vw,46px);color:var(--ink);text-transform:uppercase;line-height:1;margin-bottom:8px;}
-  #lf3 .sol .name b{color:var(--accent-d);}
+  #lf3 .sol .name b{color:var(--blue-d);}
   #lf3 .sol .def{font-size:15px;font-weight:600;color:var(--ink);max-width:38ch;margin:0 auto;}
 
   /* product 3 */
@@ -126,7 +137,7 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .offer-note{font-size:12px;font-weight:700;letter-spacing:0.03em;margin-top:8px;color:#c8cdc4;}
   #lf3 .offer-warn{background:rgba(207,75,57,0.15);border:1px solid rgba(207,75,57,0.4);color:#f0b7ae;font-size:12.5px;font-weight:700;padding:8px 12px;border-radius:9px;margin-top:14px;}
   #lf3 .timer{max-width:400px;margin:20px auto 0;background:var(--white);border:2px dashed var(--accent);border-radius:16px;padding:16px 18px;}
-  #lf3 .timer-lbl{font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-d);margin-bottom:10px;}
+  #lf3 .timer-lbl{font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-d);margin-bottom:10px;}
   #lf3 .clock{display:flex;justify-content:center;align-items:flex-start;gap:6px;}
   #lf3 .unit{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:9px 10px 7px;min-width:60px;}
   #lf3 .unit .n{font-family:'Poppins',sans-serif;font-weight:800;font-size:26px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums;}
@@ -144,7 +155,7 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .bon-card p{font-size:13px;color:var(--gray);margin-bottom:12px;}
   #lf3 .bon-val{display:inline-block;background:#FBEFDA;border-radius:50px;padding:6px 15px;font-size:12.5px;font-weight:800;color:var(--ink);}
   #lf3 .bon-val s{color:#999;font-weight:500;margin-right:6px;}
-  #lf3 .bon-val b{color:var(--accent-d);}
+  #lf3 .bon-val b{color:var(--green-d);}
   #lf3 .bon-total{background:var(--ink);color:var(--cream);border-radius:14px;padding:18px;text-align:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:16px;margin-top:4px;}
   #lf3 .bon-total b{color:var(--accent);}
   #lf3 .bon-sub{display:block;font-size:11px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:0.04em;margin:-3px 0 7px;}
@@ -163,12 +174,12 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .val-list{background:var(--cream);border-radius:16px;padding:22px;box-shadow:0 10px 26px -16px rgba(0,0,0,0.16);}
   #lf3 .val-list .vr{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:600;}
   #lf3 .val-list .vr:last-child{border-bottom:none;}
-  #lf3 .val-list .vr .free{color:var(--accent-d);font-weight:800;}
+  #lf3 .val-list .vr .free{color:var(--green-d);font-weight:800;}
   #lf3 .val-tot{text-align:center;margin-top:18px;}
   #lf3 .val-tot .was{font-size:14px;color:var(--gray);font-weight:600;}
   #lf3 .val-tot .was s{text-decoration-color:var(--danger);text-decoration-thickness:2px;}
   #lf3 .val-tot .lbl{font-size:13px;font-weight:700;text-transform:uppercase;color:var(--ink);margin:10px 0 2px;letter-spacing:0.04em;}
-  #lf3 .val-tot .now{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(36px,10vw,52px);color:var(--accent-d);line-height:1;}
+  #lf3 .val-tot .now{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(36px,10vw,52px);color:var(--blue-d);line-height:1;}
   #lf3 .val-tot .save{display:inline-block;margin-top:10px;background:#FBEFDA;color:var(--ink);font-weight:800;font-size:13px;padding:7px 15px;border-radius:9px;}
 
   /* guarantee + faq */
@@ -180,7 +191,7 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .guar .stamp{display:inline-block;margin-top:14px;background:var(--cream);border:1px solid var(--line);border-radius:9px;padding:8px 16px;font-weight:800;font-size:13px;color:var(--ink);}
   #lf3 .faq-item{background:var(--white);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;}
   #lf3 .faq-q{padding:16px 18px;font-family:'Poppins',sans-serif;font-weight:700;font-size:14.5px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
-  #lf3 .faq-q::after{content:'+';color:var(--accent-d);font-weight:800;font-size:20px;flex:none;}
+  #lf3 .faq-q::after{content:'+';color:var(--blue-d);font-weight:800;font-size:20px;flex:none;}
   #lf3 .faq-item.open .faq-q::after{content:'\2013';}
   #lf3 .faq-a{max-height:0;overflow:hidden;transition:max-height .28s ease;}
   #lf3 .faq-a p{padding:0 18px 16px;font-size:13.5px;color:var(--gray);}
@@ -233,7 +244,7 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
 </header>
 
 <!-- ============ 2 · IDENTIFICACIÓN ============ -->
-<section class="dark">
+<section class="pain">
   <div class="wrap">
     <div class="kicker">¿Te suena?</div>
     <h2>Este método es para vos si…</h2>
