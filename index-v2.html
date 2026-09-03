@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecturas Felices · Que tu hijo aprenda a leer jugando</title>
+<meta name="description" content="Método Lecturas Felices: tu hijo aprende a leer jugando, 10 minutos por día y sin frustrarse. Para chicos de 2 a 11 años. Fichas de trazo, sonidos, juegos y cuentos. Acceso al instante y para siempre.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Que tu hijo aprenda a leer jugando — Lecturas Felices">
+<meta property="og:description" content="Un método completo de lectura para chicos de 2 a 11 años. 10 minutos por día. Vos no tenés que saber enseñar.">
+<meta property="og:image" content="hero-lecturas.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="hero-lecturas.webp" type="image/webp" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1097576749608086');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'landing', value:17999, currency:'ARS'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1097576749608086&ev=PageView&noscript=1"/></noscript>
+
+<style>
+  html,body{margin:0;padding:0;overflow-x:hidden;}
+  .lf *{margin:0;padding:0;box-sizing:border-box;}
+  .lf{
+    --olive:#7d7f52;--olive-deep:#5c5e3a;--olive-soft:#a3a57e;--olive-wash:#eceedd;
+    --cream:#f7f3e6;--cream-lt:#fffdf6;--terra:#a8724a;--terra-deep:#8c5c38;
+    --gold:#d4a24c;--green:#5f7f4e;--green-deep:#4a6640;
+    --ink:#2e2f24;--ink-soft:#6b6c5b;--line:#e3dfcd;--white:#fff;
+    font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream-lt);
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  .lf img,.lf video{max-width:100%;}
+  .lf a{color:inherit;}
+  .lf-section{padding:56px 22px;}
+  .lf-wrap{max-width:1040px;margin:0 auto;}
+  .lf-narrow{max-width:720px;margin:0 auto;}
+  .lf-serif{font-family:'Fraunces',serif;}
+  .lf-eyebrow{display:inline-block;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--olive);margin-bottom:14px;}
+  .lf-h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(27px,4.4vw,44px);line-height:1.15;letter-spacing:-0.01em;color:var(--ink);}
+  .lf-h2 em{font-style:italic;color:var(--terra-deep);}
+  .lf-rule{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--olive),transparent);margin:14px auto;}
+
+  /* CTA */
+  .lf-cta{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;
+    background:var(--terra);color:var(--cream-lt);padding:18px 34px;border-radius:50px;
+    font-family:'Inter',sans-serif;font-size:15px;font-weight:700;letter-spacing:0.01em;
+    box-shadow:0 16px 34px -12px rgba(168,114,74,0.6);border:none;cursor:pointer;
+    transition:transform .25s ease,background .25s ease,box-shadow .25s ease;
+    width:100%;max-width:440px;
+  }
+  .lf-cta:hover{transform:translateY(-2px);background:var(--terra-deep);box-shadow:0 22px 44px -12px rgba(140,92,56,0.65);}
+  .lf-cta .arw{transition:transform .25s ease;}
+  .lf-cta:hover .arw{transform:translateX(4px);}
+  .lf-cta-note{margin-top:14px;font-size:12.5px;color:var(--ink-soft);}
+  @media(min-width:576px){.lf-cta{width:auto;font-size:16px;}}
+
+  /* 01 marquee */
+  .lf-bar{background:var(--olive-deep);color:var(--cream-lt);padding:11px 0;overflow:hidden;position:relative;}
+  .lf-bar-track{display:flex;width:max-content;animation:lfMarquee 30s linear infinite;}
+  .lf-bar-group{display:flex;align-items:center;gap:24px;padding-right:24px;flex-shrink:0;}
+  .lf-bar-item{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;white-space:nowrap;}
+  .lf-bar-item .s{color:var(--gold);}
+  .lf-bar-sub{font-family:'Fraunces',serif;font-style:italic;font-size:12.5px;color:#e6e2d2;white-space:nowrap;}
+  .lf-bar-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+  @keyframes lfMarquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* 02 hero */
+  .lf-hero{background:radial-gradient(ellipse at 50% -10%,rgba(125,127,82,0.12) 0%,transparent 55%),var(--cream-lt);padding:26px 22px 56px;text-align:center;}
+  .lf-hero-inner{max-width:740px;margin:0 auto;}
+  .lf-pill{display:inline-flex;align-items:center;gap:9px;padding:8px 17px;margin-bottom:16px;background:var(--white);border:1px solid var(--line);border-radius:50px;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;color:var(--terra);}
+  .lf-pill .d{width:6px;height:6px;border-radius:50%;background:var(--gold);}
+  .lf-h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(26px,5vw,46px);line-height:1.15;letter-spacing:-0.015em;color:var(--ink);margin:0 auto 12px;max-width:22ch;}
+  .lf-h1 em{font-style:italic;color:var(--terra-deep);}
+  .lf-hero-sub{font-size:14.5px;line-height:1.65;color:var(--ink-soft);margin:14px auto 18px;max-width:44ch;}
+  .lf-hero-sub b{color:var(--ink);font-weight:600;}
+  .lf-trust{display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 11px;margin-bottom:9px;padding:8px 16px;background:var(--olive-wash);border:1px solid var(--line);border-radius:20px;max-width:100%;}
+  .lf-stars{color:var(--gold);letter-spacing:1.5px;font-size:12px;}
+  .lf-trust span{font-size:12px;color:var(--ink-soft);}
+  .lf-trust b{color:var(--ink);font-weight:600;}
+  .lf-access{font-size:12px;color:var(--olive-deep);font-weight:600;margin-bottom:22px;}
+  .lf-media{position:relative;max-width:460px;margin:0 auto 34px;padding:12px;background:var(--white);border:1px solid var(--line);border-radius:20px;box-shadow:0 26px 54px -28px rgba(92,94,58,0.4);}
+  .lf-frame{aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:var(--olive-wash);}
+  .lf-frame video{width:100%;height:100%;object-fit:cover;display:block;}
+  .lf-badge{position:absolute;bottom:-14px;right:-8px;background:var(--olive-deep);color:var(--cream-lt);padding:11px 16px;border-radius:13px;box-shadow:0 12px 24px -10px rgba(92,94,58,0.6);transform:rotate(-3deg);}
+  .lf-badge .n{font-family:'Fraunces',serif;font-size:20px;font-weight:600;line-height:1;}
+  .lf-badge .l{font-size:9px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-top:3px;opacity:0.85;}
+  .lf-facts{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:16px;}
+  .lf-fact{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--olive-deep);background:var(--olive-wash);border:1px solid var(--line);padding:7px 13px;border-radius:50px;}
+
+  /* 03 transition */
+  .lf-trans{background:var(--olive);color:var(--cream-lt);padding:14px 16px;text-align:center;}
+  .lf-trans span{display:inline-flex;align-items:center;gap:13px;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;font-weight:700;}
+  .lf-trans span::before,.lf-trans span::after{content:'';width:22px;height:1px;background:var(--gold);}
+
+  /* 04 pain */
+  .lf-pain{background:var(--cream-lt);}
+  .lf-pain-head{text-align:center;max-width:640px;margin:0 auto 44px;}
+  .lf-pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;}
+  .lf-pain-item{text-align:center;}
+  .lf-pain-ic{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:var(--olive-wash);border:1px solid var(--line);color:var(--olive-deep);margin-bottom:18px;}
+  .lf-pain-ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+  .lf-pain-item h3{font-family:'Fraunces',serif;font-size:18px;font-weight:500;line-height:1.25;margin-bottom:9px;}
+  .lf-pain-item p{font-size:13.5px;color:var(--ink-soft);line-height:1.6;max-width:28ch;margin:0 auto;}
+  .lf-pain-bridge{margin-top:48px;text-align:center;}
+  .lf-pain-bridge p{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(16px,2.4vw,20px);color:var(--olive-deep);max-width:46ch;margin:0 auto;line-height:1.5;}
+  @media(max-width:900px){.lf-pain-grid{grid-template-columns:repeat(2,1fr);gap:34px 24px;}}
+  @media(max-width:560px){
+    .lf-pain-grid{grid-template-columns:1fr;gap:6px;max-width:440px;margin:0 auto;}
+    .lf-pain-item{display:grid;grid-template-columns:50px 1fr;column-gap:15px;text-align:left;padding:14px 0;align-items:start;}
+    .lf-pain-ic{grid-row:1/3;width:46px;height:46px;margin:0;align-self:center;}
+    .lf-pain-item h3{margin:0;font-size:16px;}
+    .lf-pain-item p{max-width:none;margin:2px 0 0;}
+  }
+
+  /* 05 solution */
+  .lf-sol{background:var(--olive-wash);}
+  .lf-sol-head{text-align:center;max-width:720px;margin:0 auto 44px;}
+  .lf-sol-lede{font-size:15px;line-height:1.7;color:var(--ink-soft);max-width:54ch;margin:16px auto 0;}
+  .lf-sol-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .lf-sol-card{background:var(--cream-lt);border:1px solid var(--line);border-radius:16px;padding:32px 28px;}
+  .lf-sol-card .num{font-family:'Fraunces',serif;font-style:italic;font-size:38px;line-height:1;color:var(--terra);margin-bottom:16px;}
+  .lf-sol-card h3{font-family:'Fraunces',serif;font-size:20px;font-weight:500;line-height:1.25;margin-bottom:10px;}
+  .lf-sol-card p{font-size:13.5px;color:var(--ink-soft);line-height:1.6;}
+  @media(max-width:820px){.lf-sol-grid{grid-template-columns:1fr;}}
+  @media(max-width:560px){.lf-sol-card{padding:22px 22px;}}
+
+  /* 06 tabs */
+  .lf-tabs-sec{background:var(--cream-lt);}
+  .lf-tabs-head{text-align:center;max-width:600px;margin:0 auto 34px;}
+  .lf-tabs-head p{font-size:14.5px;color:var(--ink-soft);margin-top:12px;}
+  .lf-tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:34px;}
+  .lf-tab{background:var(--white);border:1px solid var(--line);color:var(--ink-soft);padding:12px 20px;border-radius:50px;cursor:pointer;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;transition:background .25s,color .25s,border-color .25s;}
+  .lf-tab:hover{color:var(--olive-deep);border-color:var(--olive);}
+  .lf-tab.on{background:var(--olive-deep);color:var(--cream-lt);border-color:var(--olive-deep);}
+  .lf-panel{display:none;}
+  .lf-panel.on{display:block;animation:lfFade .4s ease;}
+  @keyframes lfFade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+  .lf-panel-in{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
+  .lf-panel-txt h3{font-family:'Fraunces',serif;font-size:clamp(21px,3vw,30px);font-weight:500;line-height:1.2;margin-bottom:8px;}
+  .lf-panel-txt .age{font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:var(--terra);margin-bottom:14px;}
+  .lf-panel-txt > p{font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:18px;}
+  .lf-panel-list{list-style:none;}
+  .lf-panel-list li{padding:11px 0 11px 24px;font-size:13.5px;font-weight:500;border-bottom:1px solid var(--line);position:relative;}
+  .lf-panel-list li:last-child{border-bottom:none;}
+  .lf-panel-list li::before{content:'';position:absolute;left:0;top:19px;width:13px;height:1px;background:var(--terra);}
+  .lf-panel-img{aspect-ratio:4/5;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--olive-wash);max-width:380px;margin:0 auto;}
+  .lf-panel-img img{width:100%;height:100%;object-fit:cover;display:block;}
+  @media(max-width:860px){.lf-panel-in{grid-template-columns:1fr;gap:26px;}.lf-panel-img{aspect-ratio:1/1;max-width:320px;}}
+
+  /* 07 steps */
+  .lf-steps-sec{background:var(--olive-wash);}
+  .lf-steps-head{text-align:center;max-width:640px;margin:0 auto 58px;}
+  .lf-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:40px;position:relative;}
+  .lf-steps::before{content:'';position:absolute;top:52px;left:16%;right:16%;height:2px;z-index:0;opacity:0.5;background-image:radial-gradient(circle,var(--olive) 1.5px,transparent 1.5px);background-size:11px 2px;background-repeat:repeat-x;}
+  .lf-step{background:var(--cream-lt);border:1px solid var(--line);border-radius:16px;padding:6px 26px 24px;text-align:center;position:relative;z-index:1;}
+  .lf-step .n{position:absolute;top:-17px;left:50%;transform:translateX(-50%);width:42px;height:42px;background:var(--terra);color:var(--cream-lt);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:19px;font-weight:600;border:3px solid var(--cream-lt);box-shadow:0 6px 13px rgba(168,114,74,0.4);}
+  .lf-step .ic{display:inline-flex;align-items:center;justify-content:center;width:58px;height:58px;background:var(--white);border:1px solid var(--line);border-radius:50%;color:var(--olive-deep);margin:34px auto 18px;}
+  .lf-step .ic svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+  .lf-step h3{font-family:'Fraunces',serif;font-size:19px;font-weight:500;margin-bottom:9px;}
+  .lf-step p{font-size:13.5px;color:var(--ink-soft);line-height:1.55;max-width:30ch;margin:0 auto;}
+  @media(max-width:820px){
+    .lf-steps{grid-template-columns:1fr;gap:46px;max-width:400px;margin:0 auto 40px;}
+    .lf-steps::before{top:20px;bottom:20px;left:50%;right:auto;transform:translateX(-50%);width:2px;height:auto;background-image:radial-gradient(circle,var(--olive) 1.5px,transparent 1.5px);background-size:2px 11px;background-repeat:repeat-y;}
+  }
+
+  /* 08 carousel */
+  .lf-car{background:var(--cream-lt);padding:56px 0;overflow:hidden;}
+  .lf-car-head{text-align:center;max-width:680px;margin:0 auto 36px;padding:0 22px;}
+  .lf-car-head p{font-size:14.5px;color:var(--ink-soft);margin-top:12px;}
+  .lf-car-track{display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;padding:6px 22px 26px;scroll-snap-type:x mandatory;scrollbar-width:none;}
+  .lf-car-track::-webkit-scrollbar{display:none;}
+  .lf-car-card{flex:0 0 220px;background:var(--white);border:1px solid var(--line);border-radius:15px;padding:24px 20px;scroll-snap-align:start;}
+  .lf-car-card .k{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:var(--terra);margin-bottom:12px;}
+  .lf-car-card h3{font-family:'Fraunces',serif;font-size:17px;font-weight:600;line-height:1.25;margin-bottom:8px;}
+  .lf-car-card p{font-size:12.5px;color:var(--ink-soft);line-height:1.55;}
+  .lf-car-ctrl{display:flex;justify-content:center;gap:12px;margin-bottom:18px;}
+  .lf-car-arw{width:46px;height:46px;border-radius:50%;background:var(--white);border:1px solid var(--line);color:var(--olive-deep);font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s;user-select:none;}
+  .lf-car-arw:hover{background:var(--olive-deep);color:var(--cream-lt);border-color:var(--olive-deep);}
+  .lf-car-foot{text-align:center;padding:0 22px;font-family:'Fraunces',serif;font-style:italic;font-size:14.5px;color:var(--olive-deep);max-width:52ch;margin:0 auto;line-height:1.55;}
+
+  /* 09 bonuses */
+  .lf-bon{background:var(--olive-wash);}
+  .lf-bon-head{text-align:center;max-width:640px;margin:0 auto 40px;}
+  .lf-bon-pill{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:#3a2f14;font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:8px 16px;border-radius:50px;margin-bottom:16px;}
+  .lf-bon-lede{font-size:14px;color:var(--ink-soft);margin-top:10px;}
+  .lf-bon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .lf-bon-card{background:var(--white);border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;}
+  .lf-bon-img{aspect-ratio:1/1;background:var(--olive-wash);position:relative;border-bottom:1px solid var(--line);}
+  .lf-bon-img img{width:100%;height:100%;object-fit:cover;display:block;}
+  .lf-bon-tag{position:absolute;top:12px;left:12px;background:var(--terra);color:var(--cream-lt);padding:6px 12px;border-radius:50px;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;font-weight:800;}
+  .lf-bon-body{padding:20px 18px 20px;flex-grow:1;display:flex;flex-direction:column;}
+  .lf-bon-body h3{font-family:'Fraunces',serif;font-size:17px;font-weight:600;line-height:1.25;margin-bottom:8px;}
+  .lf-bon-body p{font-size:12.5px;color:var(--ink-soft);line-height:1.55;flex-grow:1;margin-bottom:14px;}
+  .lf-bon-val{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:12px;border-top:1px solid var(--line);}
+  .lf-bon-was{font-family:'Fraunces',serif;font-size:15px;color:var(--ink-soft);text-decoration:line-through;text-decoration-color:var(--terra);text-decoration-thickness:2px;}
+  .lf-bon-free{display:inline-flex;align-items:center;gap:4px;background:rgba(95,127,78,0.12);border:1px solid rgba(95,127,78,0.4);color:var(--green-deep);font-size:10.5px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;padding:5px 10px;border-radius:50px;}
+  @media(max-width:860px){.lf-bon-grid{grid-template-columns:1fr;max-width:380px;margin:0 auto;}}
+
+  /* 10 offer */
+  .lf-offer{background:radial-gradient(ellipse at 20% 0%,rgba(212,162,76,0.14) 0%,transparent 55%),radial-gradient(ellipse at 80% 100%,rgba(125,127,82,0.14) 0%,transparent 55%),var(--cream);text-align:center;}
+  .lf-offer-top{max-width:470px;margin:0 auto 30px;}
+  .lf-offer-kick{display:inline-block;padding:9px 22px;border-radius:11px;font-weight:800;letter-spacing:0.06em;font-size:15px;background:var(--gold);color:#3a2f14;box-shadow:0 3px 0 #a87e33;}
+  .lf-offer-script{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:22px;color:var(--terra-deep);margin-top:10px;}
+  .lf-timer{border:2px dashed var(--terra);border-radius:15px;padding:14px 18px;background:var(--white);display:inline-block;margin-top:18px;}
+  .lf-timer-lbl{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--terra-deep);font-weight:800;margin-bottom:10px;}
+  .lf-clock{display:flex;align-items:flex-start;justify-content:center;gap:5px;}
+  .lf-unit{background:var(--cream-lt);border:1px solid var(--line);border-radius:9px;padding:9px 12px 7px;min-width:58px;display:flex;flex-direction:column;align-items:center;}
+  .lf-unit .n{font-family:'Fraunces',serif;font-size:24px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums;}
+  .lf-unit .l{font-size:8.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:5px;font-weight:700;}
+  .lf-sep{font-family:'Fraunces',serif;font-size:20px;color:var(--terra);font-weight:600;padding-top:8px;}
+  .lf-card{max-width:460px;margin:0 auto;background:var(--cream-lt);border:3px solid var(--terra);border-radius:22px;padding:38px 24px 26px;position:relative;box-shadow:0 24px 56px -24px rgba(168,114,74,0.5);}
+  .lf-card-launch{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--gold);color:#3a2f14;padding:7px 20px;border-radius:50px;font-weight:800;font-size:10.5px;letter-spacing:0.1em;box-shadow:0 3px 0 #a87e33;white-space:nowrap;text-transform:uppercase;}
+  .lf-card-name{font-family:'Fraunces',serif;font-size:clamp(22px,5vw,30px);font-weight:700;color:var(--terra-deep);line-height:1.05;margin:10px 0 4px;text-transform:uppercase;letter-spacing:0.01em;}
+  .lf-card-sub{font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;margin-bottom:22px;}
+  .lf-stack{text-align:left;background:var(--white);border:1px solid var(--line);border-radius:13px;padding:16px 18px;margin-bottom:18px;font-size:13.5px;}
+  .lf-stack .r{display:flex;justify-content:space-between;gap:12px;padding:5px 0;color:var(--ink-soft);}
+  .lf-stack .r b{color:var(--ink);font-weight:600;}
+  .lf-stack .tot{border-top:1px solid var(--line);margin-top:6px;padding-top:9px;font-weight:600;color:var(--ink);}
+  .lf-stack .tot s{color:var(--ink-soft);}
+  .lf-price{margin:2px 0 4px;}
+  .lf-price .now{font-family:'Fraunces',serif;font-size:clamp(38px,9vw,52px);font-weight:700;color:var(--ink);line-height:1;}
+  .lf-price .cur{font-size:15px;color:var(--ink-soft);font-weight:600;margin-left:4px;}
+  .lf-price-line{font-size:13px;color:var(--ink-soft);margin-bottom:4px;}
+  .lf-save{display:inline-block;background:rgba(95,127,78,0.16);color:var(--green-deep);font-weight:800;font-size:12.5px;padding:6px 14px;border-radius:8px;margin-bottom:20px;}
+  .lf-once{font-size:12px;color:var(--ink-soft);margin-top:14px;}
+  .lf-pays{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin-top:16px;}
+  .lf-pay{display:inline-flex;align-items:center;height:26px;padding:0 9px;border-radius:6px;font-family:'Inter';font-weight:800;font-size:10px;background:var(--white);border:1px solid var(--line);color:var(--ink-soft);}
+  .lf-pay img{width:20px;height:14px;object-fit:contain;margin-right:4px;}
+  .lf-guar{display:flex;align-items:flex-start;gap:12px;max-width:460px;margin:16px auto 0;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-align:left;}
+  .lf-guar svg{flex:none;width:26px;height:26px;fill:none;stroke:var(--green-deep);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-top:1px;}
+  .lf-guar p{font-size:12.5px;color:var(--ink-soft);line-height:1.5;}
+  .lf-guar b{display:block;color:var(--green-deep);font-size:14px;margin-bottom:3px;font-family:'Fraunces',serif;font-weight:600;}
+
+  /* 11 reviews */
+  .lf-rev{background:var(--cream-lt);}
+  .lf-rev-head{text-align:center;margin-bottom:12px;}
+  .lf-rev-score{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:30px;font-size:12.5px;color:var(--ink-soft);}
+  .lf-rev-grid{columns:2;column-gap:16px;}
+  .lf-rev-card{break-inside:avoid;background:var(--white);border:1px solid var(--line);border-radius:13px;padding:16px;margin-bottom:16px;}
+  .lf-rev-top{display:flex;align-items:center;gap:9px;margin-bottom:8px;}
+  .lf-rev-av{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--cream-lt);font-family:'Fraunces',serif;font-weight:600;font-size:13px;flex:none;background:var(--olive);}
+  .lf-rev-name{font-weight:700;font-size:12.5px;}
+  .lf-rev-ver{font-size:10.5px;color:var(--green-deep);font-weight:600;}
+  .lf-rev-card > p{font-size:12.5px;color:var(--ink-soft);line-height:1.5;}
+  .lf-rev-st{color:var(--gold);font-size:11px;letter-spacing:1px;margin-bottom:6px;}
+  @media(max-width:620px){.lf-rev-grid{columns:1;}}
+
+  /* 12 faq */
+  .lf-faq{background:var(--olive-wash);}
+  .lf-faq-item{background:var(--cream-lt);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;}
+  .lf-faq-q{display:flex;align-items:center;gap:12px;padding:16px 16px;cursor:pointer;font-weight:600;font-size:13.5px;font-family:'Fraunces',serif;}
+  .lf-faq-q .chev{margin-left:auto;transition:transform .25s;flex:none;width:15px;height:15px;fill:none;stroke:var(--ink-soft);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .lf-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .lf-faq-a p{margin:0;padding:0 16px 16px 40px;font-size:13px;color:var(--ink-soft);line-height:1.6;}
+  .lf-faq-item.open .lf-faq-a{max-height:280px;}
+  .lf-faq-item.open .chev{transform:rotate(180deg);}
+
+  /* 13 final */
+  .lf-final{background:var(--olive-deep);color:var(--cream-lt);text-align:center;}
+  .lf-final h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(26px,4.4vw,40px);line-height:1.15;margin-bottom:14px;}
+  .lf-final h2 em{font-style:italic;color:var(--gold);}
+  .lf-final p{font-size:14.5px;color:#e6e2d2;max-width:46ch;margin:0 auto 26px;line-height:1.6;}
+  .lf-final .lf-cta{background:var(--gold);color:#3a2f14;box-shadow:0 16px 34px -12px rgba(212,162,76,0.5);}
+  .lf-final .lf-cta:hover{background:#c2913e;}
+  .lf-foot{background:var(--ink);color:#9a9b8c;text-align:center;padding:22px;font-size:11px;line-height:1.7;}
+
+  /* sticky */
+  .lf-sticky{
+    display:none;position:fixed;right:16px;right:max(16px,env(safe-area-inset-right));
+    bottom:16px;bottom:max(16px,env(safe-area-inset-bottom));z-index:300;width:auto;max-width:none;
+    padding:13px 20px;border-radius:50px;font-size:14px;
+  }
+  .lf-sticky.show{display:inline-flex;animation:lfPop .3s ease-out;}
+  @keyframes lfPop{from{transform:translateY(14px) scale(.92);opacity:0;}to{transform:translateY(0) scale(1);opacity:1;}}
+  @media(min-width:560px){.lf-sticky{right:calc(50% - 480px + 16px);}}
+  @media(prefers-reduced-motion:reduce){.lf-sticky.show{animation:none;}}
+</style>
+</head>
+
+<body>
+<div class="lf">
+
+<!-- 01 — MARQUEE -->
+<div class="lf-bar">
+  <div class="lf-bar-track">
+    <div class="lf-bar-group">
+      <span class="lf-bar-item">Traza <span class="s">&#183;</span> Escucha <span class="s">&#183;</span> Juega <span class="s">&#183;</span> Lee</span>
+      <span class="lf-bar-dot"></span>
+      <span class="lf-bar-sub">Un método de lectura para chicos de 2 a 11 años.</span>
+      <span class="lf-bar-dot"></span>
+    </div>
+    <div class="lf-bar-group">
+      <span class="lf-bar-item">Traza <span class="s">&#183;</span> Escucha <span class="s">&#183;</span> Juega <span class="s">&#183;</span> Lee</span>
+      <span class="lf-bar-dot"></span>
+      <span class="lf-bar-sub">Un método de lectura para chicos de 2 a 11 años.</span>
+      <span class="lf-bar-dot"></span>
+    </div>
+  </div>
+</div>
+
+<!-- 02 — HERO -->
+<header class="lf-hero">
+  <div class="lf-hero-inner">
+    <div class="lf-pill"><span class="d"></span> No son fichas sueltas. Es un método.</div>
+
+    <h1 class="lf-h1">Tu hijo aprende a leer jugando, <em>sin darse cuenta de que está aprendiendo.</em></h1>
+    <div class="lf-rule"></div>
+
+    <p class="lf-hero-sub">Lecturas Felices es un método completo de lectura para chicos de <b>2 a 11 años</b>. Trabaja los sonidos, las sílabas y las primeras palabras con fichas de trazo, juegos y cuentos. Son <b>10 minutos por día</b>. Cada ficha te dice qué hacer y qué decir, así que no necesitás saber enseñar.</p>
+
+    <div class="lf-trust">
+      <span class="lf-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span><b>4,9 / 5</b> &#183; opiniones de familias que ya lo usan</span>
+    </div>
+    <div class="lf-access">Acceso al instante &#183; Pago único &#183; Lo usás con todos tus hijos</div>
+
+    <div class="lf-media">
+      <div class="lf-frame">
+        <video autoplay muted loop playsinline preload="metadata" poster="video-poster.jpg">
+          <source src="video-landing.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="lf-badge"><div class="n">+1500</div><div class="l">fichas</div></div>
+    </div>
+
+    <a href="https://infancias-felices.impultienda.ar/" class="lf-cta" onclick="if(window.fbq){fbq('track','AddToCart');fbq('track','InitiateCheckout');}">Quiero el método &#183; $17.999 <span class="arw">&#8594;</span></a>
+    <div class="lf-cta-note">Pago único. Sin suscripción. Te llega al mail al toque.</div>
+
+    <div class="lf-facts">
+      <span class="lf-fact">&#9670; 2 a 11 años</span>
+      <span class="lf-fact">&#9670; 10 minutos por día</span>
+      <span class="lf-fact">&#9670; +1500 fichas</span>
+      <span class="lf-fact">&#9670; 7 regalos adentro</span>
+    </div>
+  </div>
+</header>
+
+<!-- 03 — TRANSITION -->
+<div class="lf-trans"><span>Por qué este método</span></div>
+
+<!-- 04 — PAIN -->
+<section class="lf-section lf-pain">
+  <div class="lf-wrap">
+    <div class="lf-pain-head">
+      <span class="lf-eyebrow">¿Te suena?</span>
+      <h2 class="lf-h2">Lo que pasa <em>cuando lo agarra un libro.</em></h2>
+    </div>
+
+    <div class="lf-pain-grid">
+      <div class="lf-pain-item">
+        <div class="lf-pain-ic"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 2"/><path d="M16 3l5 5"/><path d="M21 3l-5 5"/></svg></div>
+        <h3>Se enoja y se va</h3>
+        <p>Se traba con una palabra, se frustra y cierra el libro. Vos no sabés cómo seguir sin que sea una pelea.</p>
+      </div>
+      <div class="lf-pain-item">
+        <div class="lf-pain-ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.5-5 6-5s6 2 6 5"/><path d="M15 20c0-2 1-3.5 3-3.5s3 1.5 3 3.5"/></svg></div>
+        <h3>Se compara con los demás</h3>
+        <p>Ve que otros chicos de la sala ya leen y él no. Empieza a decir que es "malo para leer".</p>
+      </div>
+      <div class="lf-pain-item">
+        <div class="lf-pain-ic"><svg viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h10"/><path d="M4 17h7"/><path d="M17 14l3 3-3 3"/></svg></div>
+        <h3>Probaste de todo</h3>
+        <p>Tarjetas, videos, apps, el cuaderno de la seño. Nada le engancha más de dos o tres días.</p>
+      </div>
+      <div class="lf-pain-item">
+        <div class="lf-pain-ic"><svg viewBox="0 0 24 24"><path d="M12 3v3"/><path d="M12 18v3"/><path d="M3 12h3"/><path d="M18 12h3"/><circle cx="12" cy="12" r="4"/><path d="M9 9h.01M15 9h.01"/></svg></div>
+        <h3>No sabés por dónde arrancar</h3>
+        <p>Querés ayudarlo en casa pero no sos maestra. No tenés claro qué mostrarle primero ni cómo.</p>
+      </div>
+    </div>
+
+    <div class="lf-pain-bridge">
+      <div class="lf-rule"></div>
+      <p>Se puede aprender a leer sin llantos y sin que vos tengas que inventar nada. Ya está todo armado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 — SOLUTION -->
+<section class="lf-section lf-sol">
+  <div class="lf-wrap">
+    <div class="lf-sol-head">
+      <span class="lf-eyebrow">La solución</span>
+      <h2 class="lf-h2">Un método pensado para que <em>le salga fácil.</em></h2>
+      <p class="lf-sol-lede">Lecturas Felices no te da actividades sueltas. Te lleva paso a paso, en el orden en que un chico aprende de verdad. Se apoya en cuatro cosas.</p>
+    </div>
+
+    <div class="lf-sol-grid">
+      <article class="lf-sol-card">
+        <div class="num">i.</div>
+        <h3>Un solo camino, ordenado</h3>
+        <p>Primero los sonidos. Después las sílabas. Después las palabras. Nada de saltar pasos. Cuando uno está firme, viene el que sigue.</p>
+      </article>
+      <article class="lf-sol-card">
+        <div class="num">ii.</div>
+        <h3>Traza, escucha y juega</h3>
+        <p>No repite letras de memoria. Las dibuja con el dedo o el lápiz, las escucha y juega con ellas. Por eso se le quedan.</p>
+      </article>
+      <article class="lf-sol-card">
+        <div class="num">iii.</div>
+        <h3>Va a su ritmo</h3>
+        <p>Los pasos son cortos. Si un día no quiere, no pasa nada. Al otro día sigue donde dejó. Sin apuro y sin presión.</p>
+      </article>
+      <article class="lf-sol-card">
+        <div class="num">iv.</div>
+        <h3>Vos lo acompañás, no enseñás</h3>
+        <p>Cada ficha te dice qué hacer y qué decirle. Te sentás al lado, seguís el paso a paso y listo. No tenés que preparar nada.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 06 — TABS -->
+<section class="lf-section lf-tabs-sec">
+  <div class="lf-wrap">
+    <div class="lf-tabs-head">
+      <span class="lf-eyebrow">Elegí en qué anda tu hijo</span>
+      <h2 class="lf-h2">Sirve <em>arranque de donde arranque.</em></h2>
+      <p>No importa si todavía no conoce una letra o si ya lee un poco. Tocá la opción que más se parece a él.</p>
+    </div>
+
+    <div class="lf-tabs">
+      <button type="button" class="lf-tab on" data-t="p1">Todavía no conoce las letras</button>
+      <button type="button" class="lf-tab" data-t="p2">Le cuesta y ya debería leer</button>
+      <button type="button" class="lf-tab" data-t="p3">Lee un poco y quiere más</button>
+    </div>
+
+    <div class="lf-panel on" id="p1">
+      <div class="lf-panel-in">
+        <div class="lf-panel-txt">
+          <div class="age">2 a 4 años</div>
+          <h3>Recién empieza</h3>
+          <p>Todavía no diferencia las letras. Acá se arranca de cero, con juego puro: el sonido de cada letra, el trazo con el dedo y actividades cortitas para que se enganche.</p>
+          <ul class="lf-panel-list">
+            <li>Empieza por los sonidos, no por el abecedario de memoria</li>
+            <li>Traza con el dedo antes que con el lápiz</li>
+            <li>Actividades de 5 a 10 minutos, sin sentarse mucho rato</li>
+          </ul>
+        </div>
+        <div class="lf-panel-img"><img src="foto-actividad-1.webp" alt="Nene señalando figuras en su ficha" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+
+    <div class="lf-panel" id="p2">
+      <div class="lf-panel-in">
+        <div class="lf-panel-txt">
+          <div class="age">5 a 7 años</div>
+          <h3>Está trabado</h3>
+          <p>Ya debería estar leyendo y le cuesta. Perdió confianza. Acá volvemos a lo básico sin que se sienta un bebé, y de a poco arma las sílabas y sus primeras palabras.</p>
+          <ul class="lf-panel-list">
+            <li>Repasa los sonidos que quedaron flojos, sin retos</li>
+            <li>Une sílabas y lee palabras cortas que entiende</li>
+            <li>Cada logro chico lo hace animarse al que sigue</li>
+          </ul>
+        </div>
+        <div class="lf-panel-img"><img src="foto-actividad-2.webp" alt="Nene trazando sílabas en su cuaderno" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+
+    <div class="lf-panel" id="p3">
+      <div class="lf-panel-in">
+        <div class="lf-panel-txt">
+          <div class="age">7 a 11 años</div>
+          <h3>Quiere ir por más</h3>
+          <p>Ya lee palabras y frases cortas. Ahora trabaja la lectura de textos, la escritura y entender lo que lee. Y las +1500 fichas para imprimir le dan práctica para rato.</p>
+          <ul class="lf-panel-list">
+            <li>Lee frases y textos cortos, no solo palabras</li>
+            <li>Escribe mejor: letra, orden y separación de palabras</li>
+            <li>Responde qué pasó en el cuento, para entender lo que lee</li>
+          </ul>
+        </div>
+        <div class="lf-panel-img"><img src="foto-actividad-3.webp" alt="Nena jugando con tarjetas de sílabas" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 — STEPS -->
+<section class="lf-section lf-steps-sec">
+  <div class="lf-wrap">
+    <div class="lf-steps-head">
+      <span class="lf-eyebrow">Así de simple</span>
+      <h2 class="lf-h2">De la ficha a leer, <em>en una tarde.</em></h2>
+    </div>
+
+    <div class="lf-steps">
+      <div class="lf-step">
+        <div class="n">1</div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v5"/></svg></div>
+        <h3>Entrás</h3>
+        <p>Después de pagar te llega el acceso al mail. Abrís y ya tenés todo el material adentro.</p>
+      </div>
+      <div class="lf-step">
+        <div class="n">2</div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M18 3a2 2 0 0 1 3 3L9 18l-4 1 1-4z"/><path d="M15 5l3 3"/></svg></div>
+        <h3>Elegís la ficha del día</h3>
+        <p>Según la edad y en qué anda. Son 10 minutos, ni uno más. Vos ya sabés qué toca.</p>
+      </div>
+      <div class="lf-step">
+        <div class="n">3</div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg></div>
+        <h3>Se sientan juntos</h3>
+        <p>Seguís lo que dice la ficha. Él traza, escucha y juega. Vos mirás y lo alentás. Nada más.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="https://infancias-felices.impultienda.ar/" class="lf-cta" onclick="if(window.fbq){fbq('track','AddToCart');fbq('track','InitiateCheckout');}">Empezar hoy con mi hijo <span class="arw">&#8594;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 08 — CAROUSEL -->
+<section class="lf-car">
+  <div class="lf-car-head">
+    <span class="lf-eyebrow">Lo que hay adentro</span>
+    <h2 class="lf-h2">Todo el camino, <em>de la primera letra a leer un cuento.</em></h2>
+    <p>Ocho etapas, ordenadas. Empezás donde está tu hijo hoy.</p>
+  </div>
+
+  <div class="lf-car-track" id="lfCar">
+    <article class="lf-car-card"><div class="k">Etapa 1</div><h3>Los sonidos</h3><p>Qué sonido hace cada letra. La base de todo. Sin esto, deletrear no sirve.</p></article>
+    <article class="lf-car-card"><div class="k">Etapa 2</div><h3>Las vocales</h3><p>A, E, I, O, U. Las reconoce, las dice y las traza sola.</p></article>
+    <article class="lf-car-card"><div class="k">Etapa 3</div><h3>Las sílabas</h3><p>ma, pe, ti, lo. Junta una consonante con una vocal y la lee.</p></article>
+    <article class="lf-car-card"><div class="k">Etapa 4</div><h3>Unir sílabas</h3><p>ma + má. Dos sílabas que forman una palabra que él conoce.</p></article>
+    <article class="lf-car-card"><div class="k">Etapa 5</div><h3>Primeras palabras</h3><p>Lee palabras cortas de verdad y entiende lo que dicen.</p></article>
+    <article class="lf-car-card"><div class="k">Etapa 6</div><h3>Frases</h3><p>Arma y lee frases cortas. "El gato duerme." Ya está leyendo.</p></article>
+    <article class="lf-car-card"><div class="k">Etapa 7</div><h3>Trazos y escritura</h3><p>Mejora la letra, el agarre del lápiz y separa bien las palabras.</p></article>
+    <article class="lf-car-card"><div class="k">Etapa 8</div><h3>Leer un cuento</h3><p>Lee un texto entero y cuenta qué pasó. Entiende lo que lee.</p></article>
+  </div>
+
+  <div class="lf-car-ctrl">
+    <div class="lf-car-arw" id="lfCarPrev">&#8592;</div>
+    <div class="lf-car-arw" id="lfCarNext">&#8594;</div>
+  </div>
+
+  <p class="lf-car-foot">Y arriba de todo esto, +1500 fichas para imprimir: repasás la etapa que quieras las veces que haga falta.</p>
+</section>
+
+<!-- 09 — BONUSES -->
+<section class="lf-section lf-bon">
+  <div class="lf-wrap">
+    <div class="lf-bon-head">
+      <span class="lf-bon-pill">&#127873; Si comprás hoy, van adentro</span>
+      <h2 class="lf-h2">7 regalos, <em>sin pagar nada más.</em></h2>
+      <p class="lf-bon-lede">Por separado, juntos valen $80.000. Hoy vienen con el método.</p>
+    </div>
+
+    <div class="lf-bon-grid">
+      <article class="lf-bon-card">
+        <div class="lf-bon-img"><span class="lf-bon-tag">Regalo</span><img src="bonus1-megakit.jpg" alt="Mega Kit Escolar" loading="lazy" decoding="async"></div>
+        <div class="lf-bon-body"><h3>Mega Kit Escolar</h3><p>Más de 1000 fichas para imprimir: lectura, atención, lenguaje y lógica, de 2 a 11 años.</p><div class="lf-bon-val"><span class="lf-bon-was">$15.000</span><span class="lf-bon-free">&#10003; Hoy gratis</span></div></div>
+      </article>
+      <article class="lf-bon-card">
+        <div class="lf-bon-img"><span class="lf-bon-tag">Regalo</span><img src="bonus2-calma.jpg" alt="Niños en Calma" loading="lazy" decoding="async"></div>
+        <div class="lf-bon-body"><h3>Niños en Calma</h3><p>Rutinas y juegos que bajan los berrinches y ayudan a que se concentre. Va bien con chicos muy movedizos o con TDAH.</p><div class="lf-bon-val"><span class="lf-bon-was">$12.000</span><span class="lf-bon-free">&#10003; Hoy gratis</span></div></div>
+      </article>
+      <article class="lf-bon-card">
+        <div class="lf-bon-img"><span class="lf-bon-tag">Regalo</span><img src="bonus3-escribir.jpg" alt="Escribir bonito, crecer seguro" loading="lazy" decoding="async"></div>
+        <div class="lf-bon-body"><h3>Escribir bonito, crecer seguro</h3><p>Trazos de menos a más para mejorar el pulso, el agarre del lápiz y la letra.</p><div class="lf-bon-val"><span class="lf-bon-was">$13.000</span><span class="lf-bon-free">&#10003; Hoy gratis</span></div></div>
+      </article>
+      <article class="lf-bon-card">
+        <div class="lf-bon-img"><span class="lf-bon-tag">Regalo</span><img src="bonus4-mecanicos.jpg" alt="Pequeños Mecánicos" loading="lazy" decoding="async"></div>
+        <div class="lf-bon-body"><h3>Pequeños Mecánicos</h3><p>Cómo funciona un auto por dentro, contado fácil. Con juegos, para colorear y desafíos.</p><div class="lf-bon-val"><span class="lf-bon-was">$10.000</span><span class="lf-bon-free">&#10003; Hoy gratis</span></div></div>
+      </article>
+      <article class="lf-bon-card">
+        <div class="lf-bon-img"><span class="lf-bon-tag">Regalo</span><img src="bonus5-alfabeto.jpg" alt="Súper Alfabeto" loading="lazy" decoding="async"></div>
+        <div class="lf-bon-body"><h3>Súper Alfabeto</h3><p>Juegos para dominar las letras, la memoria visual y sumar palabras nuevas. Incluye Kit de Lenguaje.</p><div class="lf-bon-val"><span class="lf-bon-was">$12.000</span><span class="lf-bon-free">&#10003; Hoy gratis</span></div></div>
+      </article>
+      <article class="lf-bon-card">
+        <div class="lf-bon-img"><span class="lf-bon-tag">Regalo</span><img src="bonus6-cuentos.jpg" alt="Cuentos para dormir felices" loading="lazy" decoding="async"></div>
+        <div class="lf-bon-body"><h3>Cuentos para dormir felices</h3><p>Más de 40 cuentos ilustrados con valores. Le van a dar ganas de que sea la hora de dormir.</p><div class="lf-bon-val"><span class="lf-bon-was">$10.000</span><span class="lf-bon-free">&#10003; Hoy gratis</span></div></div>
+      </article>
+      <article class="lf-bon-card">
+        <div class="lf-bon-img"><span class="lf-bon-tag">Regalo</span><img src="bonus7-guia.jpg" alt="La guía para madres y padres" loading="lazy" decoding="async"></div>
+        <div class="lf-bon-body"><h3>La guía para madres y padres</h3><p>Planes de una semana para trabajar atención, conducta y lenguaje en casa, sin volverte loca.</p><div class="lf-bon-val"><span class="lf-bon-was">$8.000</span><span class="lf-bon-free">&#10003; Hoy gratis</span></div></div>
+      </article>
+      <article class="lf-bon-card" style="justify-content:center;align-items:center;text-align:center;padding:28px 22px;">
+        <div class="lf-bon-body" style="justify-content:center;">
+          <h3 style="margin-bottom:6px;">Los 7 juntos</h3>
+          <p style="flex-grow:0;margin-bottom:12px;">Por separado: $80.000.</p>
+          <span class="lf-bon-free" style="align-self:center;font-size:12px;padding:8px 14px;">&#10003; Hoy: $0</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 10 — OFFER -->
+<section class="lf-section lf-offer" id="oferta">
+  <div class="lf-offer-top">
+    <span class="lf-offer-kick">OFERTA DE LANZAMIENTO</span>
+    <div class="lf-offer-script">Precio de salida, por poco tiempo.</div>
+    <div class="lf-timer">
+      <div class="lf-timer-lbl">&#9200; Termina en</div>
+      <div class="lf-clock">
+        <div class="lf-unit"><span class="n" id="lfH">47</span><span class="l">Horas</span></div>
+        <span class="lf-sep">:</span>
+        <div class="lf-unit"><span class="n" id="lfM">59</span><span class="l">Min</span></div>
+        <span class="lf-sep">:</span>
+        <div class="lf-unit"><span class="n" id="lfS">58</span><span class="l">Seg</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lf-card">
+    <div class="lf-card-launch">Pack completo</div>
+    <div class="lf-card-name">Lecturas Felices</div>
+    <div class="lf-card-sub">Método + 7 regalos</div>
+
+    <div class="lf-stack">
+      <div class="r"><span>El método completo</span><b>$38.000</b></div>
+      <div class="r"><span>Los 7 regalos</span><b>$80.000</b></div>
+      <div class="r tot"><span>Todo junto vale</span><s>$118.000</s></div>
+    </div>
+
+    <div class="lf-price-line">Hoy lo pagás</div>
+    <div class="lf-price"><span class="now">$17.999</span><span class="cur">ARS</span></div>
+    <div class="lf-save">Te ahorrás $100.000</div>
+
+    <a href="https://infancias-felices.impultienda.ar/" class="lf-cta" onclick="if(window.fbq){fbq('track','AddToCart');fbq('track','InitiateCheckout');}">Lo quiero para mi hijo <span class="arw">&#8594;</span></a>
+    <div class="lf-once">Pagás una vez. Es tuyo para siempre. Te llega al mail al toque.</div>
+
+    <div class="lf-pays">
+      <span class="lf-pay">VISA</span>
+      <span class="lf-pay">Mastercard</span>
+      <span class="lf-pay">Maestro</span>
+      <span class="lf-pay"><img src="mpimages.jpeg" alt="">Mercado Pago</span>
+    </div>
+  </div>
+
+  <div class="lf-guar">
+    <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg>
+    <p><b>7 días de garantía</b>Probalo con tu hijo. Si en 7 días ves que no es para ustedes, escribís y te devolvemos toda la plata. Sin vueltas.</p>
+  </div>
+</section>
+
+<!-- 11 — REVIEWS -->
+<section class="lf-section lf-rev">
+  <div class="lf-narrow">
+    <div class="lf-rev-head"><h2 class="lf-h2">Lo que cuentan <em>las familias.</em></h2></div>
+    <div class="lf-rev-score"><span class="lf-stars" style="color:var(--gold);letter-spacing:1.5px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4,9 / 5 &#183; 11 opiniones</div>
+
+    <div class="lf-rev-grid">
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">P</div><div><div class="lf-rev-name">Patricia D.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Mi hijo es un torbellino. De las pocas veces que se quedó concentrado haciendo algo. Vamos por el cuarto día y cada día lo veo más enganchado.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">Z</div><div><div class="lf-rev-name">Zulma F.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Pensé que los regalos eran algo de relleno. Para nada. Son súper completos. Gracias!</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">F</div><div><div class="lf-rev-name">Fabiana C.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Súper completo, la cantidad de material me sorprendió. Pensé que era un solo libro y son un montón.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">R</div><div><div class="lf-rev-name">Romina S.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Mi hijo tiene TDAH y nunca aguantaba una actividad más de dos minutos. Me sorprendió verlo tan tranquilo y concentrado.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">C</div><div><div class="lf-rev-name">Camila S.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Es increíble cómo algo tan simple puede hacer tanta diferencia. Muy contenta con la compra.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">M</div><div><div class="lf-rev-name">Mariela D.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Me sirve igual para el de 2 años y para el de 6. Por fin algo que funciona con los dos.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">P</div><div><div class="lf-rev-name">Pablo P.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Nunca fui bueno para explicarle las letras. Con esto hasta yo aprendí. Verlo leer sus primeras palabras no tiene precio.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">A</div><div><div class="lf-rev-name">Agustina R.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Mi hija ahora entiende cosas que ni yo sabía explicarle. Encantada con los mini desafíos.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">P</div><div><div class="lf-rev-name">Paula F.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Empezamos hace 5 días y ya repite varios sonidos sola. No pensé que iba a ser tan fácil.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">G</div><div><div class="lf-rev-name">Graciela H.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Recibí el material, está muy bien hecho. Va a ser de mucha ayuda con mi nena.</p>
+      </div>
+      <div class="lf-rev-card">
+        <div class="lf-rev-top"><div class="lf-rev-av">A</div><div><div class="lf-rev-name">Andrea M.</div><div class="lf-rev-ver">&#9679; Verificada</div></div></div>
+        <div class="lf-rev-st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Quería dejar las gracias. Mi hija está obsesionada con las fichas, hasta juega a ser maestra y enseñar las letras.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 — FAQ -->
+<section class="lf-section lf-faq">
+  <div class="lf-narrow">
+    <div style="text-align:center;margin-bottom:30px;">
+      <span class="lf-eyebrow">Dudas</span>
+      <h2 class="lf-h2">Lo que más <em>nos preguntan.</em></h2>
+    </div>
+
+    <div class="lf-faq-item">
+      <div class="lf-faq-q">¿Cómo recibo el material?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></div>
+      <div class="lf-faq-a"><p>Apenas se confirma el pago te llega un mail con el acceso a todo. Lo abrís al toque y lo usás desde la compu, la tablet o el celular. También lo podés imprimir.</p></div>
+    </div>
+    <div class="lf-faq-item">
+      <div class="lf-faq-q">¿Tengo que imprimir todo?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></div>
+      <div class="lf-faq-a"><p>No. Lo podés usar directo de la pantalla con el dedo o un lápiz óptico, o imprimir solo las fichas que más le gustan. Vos elegís.</p></div>
+    </div>
+    <div class="lf-faq-item">
+      <div class="lf-faq-q">¿Sirve si se frustra fácil o le cuesta concentrarse?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></div>
+      <div class="lf-faq-a"><p>Sí. Está armado en pasos cortos y con juego, para que avance de a poco y no se sienta presionado. Muchas familias lo usan con chicos con TDAH.</p></div>
+    </div>
+    <div class="lf-faq-item">
+      <div class="lf-faq-q">Mi hijo ya lee un poco. ¿Le sirve igual?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></div>
+      <div class="lf-faq-a"><p>Sí. Tiene distintos niveles. Empieza donde está y sigue con lectura de frases, escritura y comprensión. Le da cuerda para rato.</p></div>
+    </div>
+    <div class="lf-faq-item">
+      <div class="lf-faq-q">¿Es un pago por mes?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></div>
+      <div class="lf-faq-a"><p>No. Pagás una sola vez $17.999 y es tuyo para siempre. No hay suscripción ni cobros después. Lo podés usar con todos tus hijos.</p></div>
+    </div>
+    <div class="lf-faq-item">
+      <div class="lf-faq-q">¿Y si no me gusta?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></div>
+      <div class="lf-faq-a"><p>Tenés 7 días. Si ves que no es para ustedes, escribís y te devolvemos toda la plata. Sin preguntas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 — FINAL CTA -->
+<section class="lf-section lf-final">
+  <div class="lf-narrow">
+    <h2>El día que lea un cartel solo, <em>te vas a alegrar de haber empezado hoy.</em></h2>
+    <p>El método completo, los 7 regalos y la garantía de 7 días. Un pago de $17.999 y listo.</p>
+    <a href="https://infancias-felices.impultienda.ar/" class="lf-cta" onclick="if(window.fbq){fbq('track','AddToCart');fbq('track','InitiateCheckout');}">Quiero empezar ahora <span class="arw">&#8594;</span></a>
+  </div>
+</section>
+
+<div class="lf-foot">
+  Lecturas Felices &#183; Método de lectura para chicos de 2 a 11 años<br>
+  Acceso al instante &#183; Pago único &#183; Garantía de 7 días
+</div>
+
+<a href="https://infancias-felices.impultienda.ar/" id="lfSticky" class="lf-cta lf-sticky" onclick="if(window.fbq){fbq('track','AddToCart');fbq('track','InitiateCheckout');}">Quiero el método &#183; $17.999</a>
+
+</div>
+
+<script>
+(function(){
+  var root = document.querySelector('.lf');
+
+  // Tabs
+  var tabs = root.querySelectorAll('.lf-tab');
+  var panels = root.querySelectorAll('.lf-panel');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      tabs.forEach(function(t){ t.classList.remove('on'); });
+      panels.forEach(function(p){ p.classList.remove('on'); });
+      tab.classList.add('on');
+      var target = root.querySelector('#' + tab.getAttribute('data-t'));
+      if (target) target.classList.add('on');
+    });
+  });
+
+  // Carousel
+  var track = root.querySelector('#lfCar');
+  function step(){
+    var c = track.querySelector('.lf-car-card');
+    if (!c) return 240;
+    var g = parseFloat(getComputedStyle(track).gap) || 16;
+    return c.offsetWidth + g;
+  }
+  root.querySelector('#lfCarNext').addEventListener('click', function(){ track.scrollBy({left: step(), behavior:'smooth'}); });
+  root.querySelector('#lfCarPrev').addEventListener('click', function(){ track.scrollBy({left: -step(), behavior:'smooth'}); });
+
+  // FAQ
+  root.querySelectorAll('.lf-faq-q').forEach(function(q){
+    q.addEventListener('click', function(){ q.parentElement.classList.toggle('open'); });
+  });
+
+  // Sticky CTA after first screen
+  var sticky = root.querySelector('#lfSticky');
+  function updateSticky(){
+    if (sticky) sticky.classList.toggle('show', window.scrollY > window.innerHeight * 0.9);
+  }
+  window.addEventListener('scroll', updateSticky, {passive:true});
+  updateSticky();
+
+  // Countdown: 48 h por visitante, guardado en el navegador (no se reinicia al refrescar)
+  var KEY = 'lf_launch_deadline', DUR = 48 * 60 * 60 * 1000, deadline;
+  try {
+    deadline = parseInt(localStorage.getItem(KEY), 10);
+    if (!deadline || isNaN(deadline) || deadline - Date.now() > DUR) {
+      deadline = Date.now() + DUR;
+      localStorage.setItem(KEY, deadline);
+    }
+  } catch (e) { deadline = Date.now() + DUR; }
+  var eH = root.querySelector('#lfH'), eM = root.querySelector('#lfM'), eS = root.querySelector('#lfS');
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  function tick(){
+    var diff = deadline - Date.now();
+    if (diff < 0) diff = 0;
+    var h = Math.floor(diff / 3600000),
+        m = Math.floor(diff % 3600000 / 60000),
+        s = Math.floor(diff % 60000 / 1000);
+    if (eH) eH.textContent = pad(h);
+    if (eM) eM.textContent = pad(m);
+    if (eS) eS.textContent = pad(s);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
