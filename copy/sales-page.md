@@ -428,16 +428,26 @@ Si querés que tu hijo aprenda a leer **rápido y sin llorar**, y que no dependa
 
 ---
 
+## SECCIÓN 2b — LO QUE VAS A VER EN TU HIJO (beneficios)
+
+- ✅ Se sienta a leer sin que se lo pidas dos veces. Y no llora.
+- ✅ Reconoce los sonidos y arma sílabas que antes no podía.
+- ✅ Lee sus primeras palabras solo y se pone re contento.
+- ✅ Deja de decir que es "malo para leer". Se anima más.
+- ✅ Vos dejás de pelear con la tarea y de gastar en cosas que no le sirven.
+
+---
+
 ## SECCIÓN 4 — QUÉ HACE DISTINTO A LECTURAS FELICES
 
 **1 · Te dice qué hacer y qué decir**
-Cada ficha viene con la instrucción para vos. No enseñás: leés el paso a paso y lo seguís.
+Cada ficha trae la instrucción para vos y el orden correcto (sonido → sílaba → palabra → frase → cuento). No enseñás: seguís el paso a paso.
 
-**2 · Un solo camino, en el orden correcto**
-Sonido → sílaba → palabra → frase → cuento. En el orden en que un chico aprende de verdad. Sin saltar pasos.
+**2 · Te ahorra la particular**
+Una hora de clases particulares te sale $15.000. Esto te dura toda la primaria, lo usás con todos tus hijos y se paga una sola vez.
 
 **3 · +1500 fichas — repetís lo que quieras**
-¿Le costó una sílaba? Imprimís tres fichas más. Sin comprar nada nuevo. Y lo usás con todos tus hijos.
+¿Le costó una sílaba? Imprimís tres fichas más. Sin comprar nada nuevo. Nunca te quedás sin material.
 
 ---
 
@@ -458,19 +468,19 @@ Pago único · ARS
 
 ## SECCIÓN 6 — LOS 7 REGALOS (si comprás hoy)
 
-| Regalo | Valor | Hoy |
-|---|---|---|
-| **Mega Kit Escolar** — +1000 fichas de lectura, atención y lógica | $15.000 | GRATIS |
-| **Niños en Calma** — rutinas que bajan berrinches y suben la concentración | $12.000 | GRATIS |
-| **Trazo Firme** — de garabato a letra clara, paso a paso | $13.000 | GRATIS |
-| **Pequeños Mecánicos** — cómo funciona un auto, jugando | $10.000 | GRATIS |
-| **Súper Alfabeto** — letras, memoria visual y vocabulario + Kit de Lenguaje | $12.000 | GRATIS |
-| **40 Cuentos para Dormir** — ilustrados, con valores | $10.000 | GRATIS |
-| **Guía para Madres y Padres** — plan de una semana para trabajar en casa | $8.000 | GRATIS |
+Nombre punchy (arriba) + nombre real del producto (subtítulo):
+
+| Regalo | Real | Valor | Hoy |
+|---|---|---|---|
+| **Mil Fichas Listas** | Mega Kit Escolar | $15.000 | GRATIS |
+| **Kit Cero Berrinches** | Niños en Calma | $12.000 | GRATIS |
+| **Letra Clara en 3 Semanas** | Escribir Bonito, Crecer Seguro | $13.000 | GRATIS |
+| **Curiosos por Dentro** | Pequeños Mecánicos | $10.000 | GRATIS |
+| **Dominá el Abecedario** | Súper Alfabeto + Kit de Lenguaje | $12.000 | GRATIS |
+| **40 Cuentos para Dormir** | Ilustrados y con valores | $10.000 | GRATIS |
+| **Semana Ordenada** | Guía para Madres y Padres | $8.000 | GRATIS |
 
 **Los 7 juntos: $80.000. Hoy: $0.**
-
-*(Nombres alternativos más "sexy" si querés: "Kit Cero Berrinches", "Ruta del Trazo", "Caja de 40 Cuentos", "Semana Ordenada".)*
 
 ---
 
@@ -523,3 +533,25 @@ Sí. Cada ficha te dice la frase exacta que tenés que decir. Si sabés leer, po
 
 **¿Es pago único?**
 Sí. Pagás $17.999 una sola vez y es tuyo para siempre. Sin suscripción. Lo usás con todos tus hijos.
+
+---
+
+## SECCIÓN 10 — CIERRE (sección oscura)
+
+**ÚLTIMA VEZ**
+
+### Esto es todo lo que te llevás hoy
+
+- ✓ Método completo Lecturas Felices — 8 etapas + paso a paso
+- ✓ +1500 fichas para imprimir
+- ✓ Los 7 regalos (por separado valen $80.000)
+- ✓ Actualizaciones gratis de por vida
+- ✓ Todo digital — te llega al mail al instante
+- ✓ Un solo pago. Sin suscripción. Para siempre
+- ✓ Garantía de 30 días
+
+~~Vale $118.000~~ · **Hoy: $17.999**
+
+[ **EMPEZAR AHORA ›› $17.999** ]
+
+**P.D.:** el riesgo lo pongo yo. Probalo 30 días. Si no es para ustedes, te devuelvo todo, sin preguntas. Y si esperás, cuando cierre el lanzamiento pagás $38.000.
