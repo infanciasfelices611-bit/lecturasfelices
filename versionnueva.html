@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="producto-principal.webp" fetchpriority="high">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 <script>
 !function(f,b,e,v,n,t,s)
@@ -36,61 +36,70 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   html,body{margin:0;padding:0;overflow-x:hidden;}
   #lf3 *{margin:0;padding:0;box-sizing:border-box;}
   #lf3{
-    /* Paleta cálida infantil-lectura: crema + azul libro + amarillo sol + coral */
-    --ink:#1E2A44;--ink-d:#16203A;--accent:#F5B301;--accent-d:#D99A00;
-    --blue:#2E6BB8;--blue-d:#245A9E;
-    --danger:#D14836;--danger-lt:#FF9587;
-    --green:#3E8E5A;--green-d:#2F7A48;--green-lt:#BFE8CE;
-    --cream:#FDFBF7;--white:#fff;
-    --gray:#5B6274;--line:#E4E7EE;
-    font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);
+    /* Paleta infantil-lectura: crema + navy libro + amarillo sol + verde juego, como index.html */
+    --ink:#173864;--ink-d:#0f2947;--accent:#FFD43B;--accent-d:#FFB800;
+    --blue:#2FA8E0;--blue-d:#1E76B0;
+    --pink:#FF4F9A;--pink-d:#E8317E;
+    --danger:#E64A3B;--danger-lt:#FF9A8D;
+    --green:#33A853;--green-d:#1E7A46;--green-lt:#BFE8CE;
+    --cream:#FFFDF6;--white:#fff;
+    --gray:#4C6478;--line:#E1EFE4;
+    font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,#EAF8EE,#D3EFDD 30%,#EAF8EE 60%,var(--cream) 100%);
     -webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6;
   }
   #lf3 img,#lf3 video{max-width:100%;display:block;}
   #lf3 section{padding:52px 20px;}
   #lf3 .wrap{max-width:640px;margin:0 auto;}
-  #lf3 h1,#lf3 h2,#lf3 h3{font-family:'Poppins',sans-serif;color:var(--ink);letter-spacing:-0.01em;line-height:1.15;}
+  #lf3 h1,#lf3 h2,#lf3 h3{font-family:'Baloo 2',sans-serif;color:var(--ink);letter-spacing:-0.01em;line-height:1.15;}
   #lf3 h2{font-size:clamp(23px,5vw,32px);font-weight:800;text-align:center;margin-bottom:22px;text-transform:uppercase;}
   #lf3 .kicker{text-align:center;font-size:12px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-d);margin-bottom:12px;}
   #lf3 .dark{background:var(--ink);color:var(--cream);}
   #lf3 .dark h2,#lf3 .dark h3{color:var(--white);}
   #lf3 .dark .kicker{color:var(--accent);}
 
-  /* CTA */
+  /* CTA — botón 3D estilo app infantil, verde jugoso con "escalón" */
   #lf3 .cta{
-    display:block;width:100%;max-width:440px;margin:22px auto 0;
-    background:var(--accent);color:var(--ink);text-decoration:none;text-align:center;
-    font-family:'Poppins',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:0.01em;
-    padding:19px 22px;border-radius:14px;border:none;cursor:pointer;
-    box-shadow:0 10px 26px -8px rgba(245,179,1,0.55);
-    animation:lf3pulse 2.2s ease-in-out infinite;
-    transition:transform .2s ease,background .2s ease;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    width:100%;max-width:440px;margin:22px auto 0;
+    background:linear-gradient(180deg,#3FC463,#26A84A);color:#fff;text-decoration:none;text-align:center;
+    font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;letter-spacing:0.01em;
+    padding:18px 22px;border-radius:16px;border:none;cursor:pointer;
+    box-shadow:0 6px 0 #1C8339,0 12px 26px -8px rgba(30,120,60,.45);
+    animation:lf3bounce 2.4s ease-in-out infinite;
+    transition:transform .15s ease,box-shadow .15s ease;
   }
-  #lf3 .cta:hover{transform:translateY(-2px);background:var(--accent-d);animation:none;}
-  @keyframes lf3pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.025);}}
+  #lf3 .cta:hover{animation:none;}
+  #lf3 .cta:active{transform:translateY(4px);box-shadow:0 2px 0 #1C8339,0 6px 14px -6px rgba(30,120,60,.4);}
+  @keyframes lf3bounce{0%,100%{transform:translateY(0) scale(1);}50%{transform:translateY(-3px) scale(1.015);}}
   @media(prefers-reduced-motion:reduce){#lf3 .cta{animation:none;}}
   #lf3 .cta-sub{text-align:center;font-size:12.5px;font-weight:700;color:var(--gray);margin-top:11px;text-transform:uppercase;letter-spacing:0.03em;}
-  #lf3 .dark .cta-sub{color:#c8cdc4;}
-  #lf3 .stars{color:var(--accent);letter-spacing:2px;}
+  #lf3 .dark .cta-sub{color:#B7C8E8;}
+  #lf3 .stars{color:var(--accent-d);letter-spacing:2px;}
+
+  /* blobs decorativos, atmósfera de juego */
+  #lf3 .blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.55;z-index:0;pointer-events:none;}
+  @keyframes lf3float{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-14px) rotate(6deg);}}
+  @media(prefers-reduced-motion:reduce){#lf3 .blob{animation:none!important;}}
 
   /* HERO */
-  #lf3 .hero{background:var(--white);text-align:center;padding:0 0 44px;}
-  #lf3 .hero-bar{background:var(--ink);color:var(--cream);font-family:'Poppins',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;text-align:center;padding:11px 14px;}
+  #lf3 .hero{background:var(--white);text-align:center;padding:0 0 44px;position:relative;overflow:hidden;}
+  #lf3 .hero-bar{background:var(--ink);color:var(--cream);font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;text-align:center;padding:11px 14px;}
   #lf3 .hero-bar b{color:var(--accent);}
-  #lf3 .hero-in{max-width:640px;margin:0 auto;padding:30px 20px 0;}
-  #lf3 .hero h1{font-size:clamp(25px,6vw,40px);font-weight:800;text-transform:uppercase;margin-bottom:12px;}
-  #lf3 .hero h1 span{color:var(--blue-d);}
-  #lf3 .hero p.lead{font-size:15.5px;color:var(--gray);font-weight:500;max-width:44ch;margin:0 auto 20px;}
+  #lf3 .hero-in{max-width:640px;margin:0 auto;padding:30px 20px 0;position:relative;z-index:1;}
+  #lf3 .hero h1{font-size:clamp(34px,10.5vw,46px);font-weight:800;text-transform:uppercase;line-height:1.08;margin-bottom:12px;}
+  #lf3 .hero h1 span{color:var(--pink-d);}
+  #lf3 .hero p.lead{font-size:15.5px;color:var(--gray);font-weight:600;max-width:44ch;margin:0 auto 20px;}
   #lf3 .hero-media{margin:0 auto 4px;text-align:center;}
-  #lf3 .hero-media img{max-height:300px;width:auto;margin:0 auto;filter:drop-shadow(0 16px 30px rgba(35,55,43,0.28));}
-  #lf3 .hero-trust{font-size:13px;font-weight:700;color:var(--ink);margin-top:16px;}
+  #lf3 .hero-media img{max-height:300px;width:auto;margin:0 auto;filter:drop-shadow(0 16px 30px rgba(23,56,100,0.22));}
+  #lf3 .hero-trust{font-size:13px;font-weight:800;color:var(--green-d);margin-top:16px;}
   #lf3 .hero-trust .stars{font-size:15px;}
 
   /* checklist */
-  #lf3 .checkbox{background:var(--white);color:var(--ink);border-radius:16px;padding:24px 22px;box-shadow:0 12px 30px -14px rgba(0,0,0,0.15);border-left:5px solid var(--accent);}
-  #lf3 .checkrow{display:flex;align-items:flex-start;gap:12px;font-size:15px;font-weight:500;padding:9px 0;}
-  #lf3 .checkrow .ic{flex:none;font-size:17px;line-height:1.4;}
-  #lf3 .checkrow.yes{font-weight:700;border-top:1px solid var(--line);margin-top:6px;padding-top:15px;}
+  #lf3 .checkbox{background:var(--white);color:var(--ink);border-radius:18px;padding:24px 22px;box-shadow:0 12px 30px -14px rgba(23,56,100,0.18);border-left:5px solid var(--accent);}
+  #lf3 .checkrow{display:flex;align-items:flex-start;gap:12px;font-size:15px;font-weight:600;padding:9px 0;}
+  #lf3 .checkrow .ic{flex:none;width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:14px;line-height:1;margin-top:1px;background:#FFE4E1;}
+  #lf3 .checkrow.yes .ic{background:var(--green-lt);}
+  #lf3 .checkrow.yes{font-weight:800;border-top:1px dashed var(--line);margin-top:6px;padding-top:15px;}
 
   /* beneficios */
   #lf3 .ben{background:var(--cream);}
@@ -109,15 +118,22 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   /* solution */
   #lf3 .sol{background:var(--cream);text-align:center;}
   #lf3 .sol .trans{font-size:16px;color:var(--gray);max-width:46ch;margin:0 auto 22px;font-weight:500;}
-  #lf3 .sol .name{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(30px,8vw,46px);color:var(--ink);text-transform:uppercase;line-height:1;margin-bottom:8px;}
+  #lf3 .sol .name{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(30px,8vw,46px);color:var(--ink);text-transform:uppercase;line-height:1;margin-bottom:8px;}
   #lf3 .sol .name b{color:var(--blue-d);}
   #lf3 .sol .def{font-size:15px;font-weight:600;color:var(--ink);max-width:38ch;margin:0 auto;}
+
+  /* fotos reales */
+  #lf3 .real{background:var(--white);text-align:center;}
+  #lf3 .real-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px;}
+  #lf3 .real-grid .ph{aspect-ratio:1/1;border-radius:16px;overflow:hidden;box-shadow:0 10px 24px -14px rgba(23,56,100,0.18);}
+  #lf3 .real-grid img{width:100%;height:100%;object-fit:cover;display:block;}
+  #lf3 .real-note{font-size:12.5px;font-weight:700;color:var(--gray);margin-top:14px;}
 
   /* product 3 */
   #lf3 .p3{background:var(--white);}
   #lf3 .p3-item{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--line);}
   #lf3 .p3-item:last-child{border-bottom:none;}
-  #lf3 .p3-n{flex:none;width:40px;height:40px;border-radius:11px;background:var(--ink);color:var(--accent);font-family:'Poppins',sans-serif;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;}
+  #lf3 .p3-n{flex:none;width:40px;height:40px;border-radius:11px;background:var(--ink);color:var(--accent);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;}
   #lf3 .p3-item h3{font-size:18px;font-weight:700;margin-bottom:4px;}
   #lf3 .p3-item p{font-size:14px;color:var(--gray);}
   #lf3 .p3-video{max-width:340px;margin:26px auto 0;border-radius:16px;overflow:hidden;border:4px solid var(--ink);}
@@ -130,48 +146,53 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .offer-box{background:var(--ink);color:var(--cream);border:3px solid var(--accent);border-radius:18px;padding:28px 22px;max-width:420px;margin:0 auto;}
   #lf3 .offer-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:18px;}
   #lf3 .offer-tags span{background:rgba(255,255,255,0.1);font-size:11.5px;font-weight:600;padding:5px 11px;border-radius:50px;}
-  #lf3 .offer-old{font-size:17px;text-decoration:line-through;color:#a7ad9f;font-weight:600;}
+  #lf3 .offer-old{font-size:17px;text-decoration:line-through;color:#9BB3D6;font-weight:600;}
   #lf3 .offer-lbl{font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:0.06em;margin:6px 0 2px;}
-  #lf3 .offer-new{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(44px,13vw,60px);color:var(--accent);line-height:1;}
+  #lf3 .offer-new{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(44px,13vw,60px);color:var(--accent);line-height:1;display:inline-block;animation:lf3bounce 2.4s ease-in-out infinite;}
+  @media(prefers-reduced-motion:reduce){#lf3 .offer-new{animation:none;}}
   #lf3 .offer-new small{font-size:16px;color:var(--cream);font-weight:600;}
-  #lf3 .offer-note{font-size:12px;font-weight:700;letter-spacing:0.03em;margin-top:8px;color:#c8cdc4;}
-  #lf3 .offer-warn{background:rgba(207,75,57,0.15);border:1px solid rgba(207,75,57,0.4);color:#f0b7ae;font-size:12.5px;font-weight:700;padding:8px 12px;border-radius:9px;margin-top:14px;}
+  #lf3 .offer-note{font-size:12px;font-weight:700;letter-spacing:0.03em;margin-top:8px;color:#B7C8E8;}
+  #lf3 .offer-warn{background:rgba(230,74,59,0.18);border:1px solid rgba(230,74,59,0.4);color:#FFB3A8;font-size:12.5px;font-weight:700;padding:8px 12px;border-radius:9px;margin-top:14px;}
   #lf3 .timer{max-width:400px;margin:20px auto 0;background:var(--white);border:2px dashed var(--accent);border-radius:16px;padding:16px 18px;}
   #lf3 .timer-lbl{font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-d);margin-bottom:10px;}
   #lf3 .clock{display:flex;justify-content:center;align-items:flex-start;gap:6px;}
   #lf3 .unit{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:9px 10px 7px;min-width:60px;}
-  #lf3 .unit .n{font-family:'Poppins',sans-serif;font-weight:800;font-size:26px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums;}
+  #lf3 .unit .n{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:26px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums;}
   #lf3 .unit .l{font-size:8.5px;font-weight:700;letter-spacing:0.08em;color:var(--gray);margin-top:5px;text-transform:uppercase;}
-  #lf3 .clock .sep{font-family:'Poppins',sans-serif;font-weight:800;font-size:22px;color:var(--accent);padding-top:8px;}
+  #lf3 .clock .sep{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:var(--accent);padding-top:8px;}
   #lf3 .pays{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px;}
-  #lf3 .pay{display:inline-flex;align-items:center;height:26px;padding:0 9px;border-radius:6px;font-family:'Poppins';font-weight:700;font-size:10px;background:var(--white);border:1px solid var(--line);color:var(--gray);}
+  #lf3 .pay{display:inline-flex;align-items:center;height:26px;padding:0 9px;border-radius:6px;font-family:'Baloo 2';font-weight:700;font-size:10px;background:var(--white);border:1px solid var(--line);color:var(--gray);}
   #lf3 .pay img{width:20px;height:14px;object-fit:contain;margin-right:4px;}
 
   /* bonuses */
   #lf3 .bon{background:var(--white);}
-  #lf3 .bon-card{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:16px;text-align:center;box-shadow:0 8px 22px -14px rgba(0,0,0,0.14);}
-  #lf3 .bon-card img{width:100%;max-width:150px;margin:0 auto 14px;border-radius:11px;}
+  #lf3 .bon-card{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:16px;text-align:center;box-shadow:0 8px 22px -14px rgba(23,56,100,0.14);transition:transform .2s ease,box-shadow .2s ease;}
+  #lf3 .bon-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px -14px rgba(23,56,100,0.24);}
+  #lf3 .bon-card img{width:100%;max-width:150px;margin:0 auto 14px;border-radius:11px;transition:transform .25s ease;}
+  #lf3 .bon-card:hover img{transform:rotate(-2deg) scale(1.05);}
   #lf3 .bon-card h3{font-size:16px;font-weight:700;margin-bottom:7px;}
   #lf3 .bon-card p{font-size:13px;color:var(--gray);margin-bottom:12px;}
   #lf3 .bon-val{display:inline-block;background:#FBEFDA;border-radius:50px;padding:6px 15px;font-size:12.5px;font-weight:800;color:var(--ink);}
   #lf3 .bon-val s{color:#999;font-weight:500;margin-right:6px;}
   #lf3 .bon-val b{color:var(--green-d);}
-  #lf3 .bon-total{background:var(--ink);color:var(--cream);border-radius:14px;padding:18px;text-align:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:16px;margin-top:4px;}
+  #lf3 .bon-total{background:var(--ink);color:var(--cream);border-radius:14px;padding:18px;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:16px;margin-top:4px;}
   #lf3 .bon-total b{color:var(--accent);}
   #lf3 .bon-sub{display:block;font-size:11px;font-weight:600;color:var(--gray);text-transform:uppercase;letter-spacing:0.04em;margin:-3px 0 7px;}
 
   /* social */
   #lf3 .soc{background:var(--cream);}
-  #lf3 .soc-card{background:var(--white);border-radius:14px;padding:20px;margin-bottom:14px;box-shadow:0 8px 22px -14px rgba(0,0,0,0.14);border-left:4px solid var(--accent);}
-  #lf3 .soc-card .stars{font-size:17px;margin-bottom:8px;display:block;}
+  #lf3 .soc-card{background:var(--white);border-radius:14px;padding:20px;margin-bottom:14px;box-shadow:0 8px 22px -14px rgba(23,56,100,0.14);border-left:4px solid var(--accent);}
+  #lf3 .soc-card .stars{font-size:17px;margin-bottom:8px;display:block;animation:lf3twinkle 2.6s ease-in-out infinite;}
+  @keyframes lf3twinkle{0%,100%{opacity:1;}50%{opacity:.72;}}
+  @media(prefers-reduced-motion:reduce){#lf3 .soc-card .stars{animation:none;}}
   #lf3 .soc-card p{font-style:italic;font-size:15px;margin-bottom:12px;}
   #lf3 .soc-card .who{display:flex;align-items:center;gap:10px;}
-  #lf3 .soc-av{width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-family:'Poppins';font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px;flex:none;}
+  #lf3 .soc-av{width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-family:'Baloo 2';font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px;flex:none;}
   #lf3 .soc-card strong{font-size:12.5px;text-transform:uppercase;color:var(--gray);letter-spacing:0.03em;}
 
   /* value stack */
   #lf3 .val{background:var(--white);}
-  #lf3 .val-list{background:var(--cream);border-radius:16px;padding:22px;box-shadow:0 10px 26px -16px rgba(0,0,0,0.16);}
+  #lf3 .val-list{background:var(--cream);border-radius:16px;padding:22px;box-shadow:0 10px 26px -16px rgba(23,56,100,0.16);}
   #lf3 .val-list .vr{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:600;}
   #lf3 .val-list .vr:last-child{border-bottom:none;}
   #lf3 .val-list .vr .free{color:var(--green-d);font-weight:800;}
@@ -179,18 +200,18 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   #lf3 .val-tot .was{font-size:14px;color:var(--gray);font-weight:600;}
   #lf3 .val-tot .was s{text-decoration-color:var(--danger);text-decoration-thickness:2px;}
   #lf3 .val-tot .lbl{font-size:13px;font-weight:700;text-transform:uppercase;color:var(--ink);margin:10px 0 2px;letter-spacing:0.04em;}
-  #lf3 .val-tot .now{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(36px,10vw,52px);color:var(--blue-d);line-height:1;}
+  #lf3 .val-tot .now{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(36px,10vw,52px);color:var(--blue-d);line-height:1;}
   #lf3 .val-tot .save{display:inline-block;margin-top:10px;background:#FBEFDA;color:var(--ink);font-weight:800;font-size:13px;padding:7px 15px;border-radius:9px;}
 
   /* guarantee + faq */
   #lf3 .gf{background:var(--cream);}
-  #lf3 .guar{background:var(--white);border:2px solid var(--accent);border-radius:18px;padding:28px 24px;text-align:center;max-width:480px;margin:0 auto 34px;box-shadow:0 14px 34px -18px rgba(0,0,0,0.2);}
+  #lf3 .guar{background:var(--white);border:2px solid var(--accent);border-radius:18px;padding:28px 24px;text-align:center;max-width:480px;margin:0 auto 34px;box-shadow:0 14px 34px -18px rgba(23,56,100,0.2);}
   #lf3 .guar .shield{font-size:38px;margin-bottom:10px;}
   #lf3 .guar h3{font-size:20px;font-weight:800;margin-bottom:10px;text-transform:uppercase;}
   #lf3 .guar p{font-size:14px;color:var(--gray);}
   #lf3 .guar .stamp{display:inline-block;margin-top:14px;background:var(--cream);border:1px solid var(--line);border-radius:9px;padding:8px 16px;font-weight:800;font-size:13px;color:var(--ink);}
   #lf3 .faq-item{background:var(--white);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;}
-  #lf3 .faq-q{padding:16px 18px;font-family:'Poppins',sans-serif;font-weight:700;font-size:14.5px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  #lf3 .faq-q{padding:16px 18px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
   #lf3 .faq-q::after{content:'+';color:var(--blue-d);font-weight:800;font-size:20px;flex:none;}
   #lf3 .faq-item.open .faq-q::after{content:'\2013';}
   #lf3 .faq-a{max-height:0;overflow:hidden;transition:max-height .28s ease;}
@@ -201,15 +222,15 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
   /* cierre */
   #lf3 .close{text-align:center;}
   #lf3 .close-list{list-style:none;text-align:left;max-width:400px;margin:0 auto 20px;}
-  #lf3 .close-list li{padding:9px 0;font-size:14px;color:#eef0e8;border-bottom:1px solid rgba(255,255,255,0.1);}
+  #lf3 .close-list li{padding:9px 0;font-size:14px;color:#E7EEF7;border-bottom:1px solid rgba(255,255,255,0.1);}
   #lf3 .close-list li:last-child{border-bottom:none;}
   #lf3 .close-price{display:flex;justify-content:center;align-items:baseline;gap:12px;margin-bottom:6px;}
-  #lf3 .close-price .was{font-size:14px;color:#a7ad9f;text-decoration:line-through;text-decoration-color:var(--accent);font-weight:600;}
-  #lf3 .close-price .now{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(26px,7vw,36px);color:var(--accent);}
-  #lf3 .close-ps{font-size:12.5px;color:#c8cdc4;max-width:44ch;margin:16px auto 0;line-height:1.6;}
+  #lf3 .close-price .was{font-size:14px;color:#9BB3D6;text-decoration:line-through;text-decoration-color:var(--accent);font-weight:600;}
+  #lf3 .close-price .now{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(26px,7vw,36px);color:var(--accent);}
+  #lf3 .close-ps{font-size:12.5px;color:#B7C8E8;max-width:44ch;margin:16px auto 0;line-height:1.6;}
   #lf3 .close-ps b{color:var(--white);}
 
-  #lf3 footer{background:var(--ink-d);color:#9aa393;text-align:center;font-size:12px;line-height:1.7;padding:26px 20px calc(96px + env(safe-area-inset-bottom));}
+  #lf3 footer{background:var(--ink-d);color:#8FA0BE;text-align:center;font-size:12px;line-height:1.7;padding:26px 20px calc(96px + env(safe-area-inset-bottom));}
 
   /* sticky — barra de ancho completo, pegada abajo */
   #lf3 .sticky{
@@ -218,10 +239,12 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
     display:none;border-radius:0;animation:none;font-size:15px;
     padding:15px 20px;
     padding-bottom:calc(15px + env(safe-area-inset-bottom));
-    box-shadow:0 -6px 22px -6px rgba(0,0,0,0.28);
+    box-shadow:0 -6px 22px -6px rgba(23,56,100,0.28);
   }
   #lf3 .sticky:hover{transform:none;}
-  #lf3 .sticky.show{display:block;}
+  #lf3 .sticky.show{display:block;animation:lf3stickypop .3s ease-out;}
+  @keyframes lf3stickypop{from{transform:translateY(16px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+  @media(prefers-reduced-motion:reduce){#lf3 .sticky.show{animation:none;}}
 </style>
 </head>
 
@@ -231,9 +254,12 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
 <!-- ============ 1 · HERO ============ -->
 <div class="hero-bar">PRECIO DE LANZAMIENTO &middot; <b>7 REGALOS GRATIS</b> &middot; PAGO ÚNICO $17.999</div>
 <header class="hero">
+  <div class="blob" style="width:120px;height:120px;top:-20px;left:-30px;background:#FFD43B;animation:lf3float 6s ease-in-out infinite;"></div>
+  <div class="blob" style="width:90px;height:90px;top:60px;right:-24px;background:#FF9FC4;animation:lf3float 7s ease-in-out infinite .8s;"></div>
+  <div class="blob" style="width:60px;height:60px;bottom:10px;left:8%;background:#9FE0F0;animation:lf3float 5.5s ease-in-out infinite 1.4s;"></div>
   <div class="hero-in">
     <h1>Que tu hijo lea su <span>primer cuento solo</span> — empezando hoy, 10 minutos por día</h1>
-    <p class="lead">El método completo de lectura para chicos de 2 a 11 años. Vos no tenés que saber enseñar: cada ficha te dice qué hacer y qué decir.</p>
+    <p class="lead">El método completo de lectura para chicos de 2 a 11 años. El paso a paso exacto para que tu hijo pueda leer.</p>
     <div class="hero-media">
       <img src="producto-principal.webp" width="520" height="777" alt="Método Lecturas Felices" fetchpriority="high">
     </div>
@@ -280,6 +306,21 @@ fbq('track', 'ViewContent', {content_name:'Lecturas Felices', content_category:'
     <p class="trans">Si querés que tu hijo aprenda a leer rápido y sin llorar, y que no dependa de que vos sepas enseñar, esto es lo que estabas buscando.</p>
     <div class="name">Lecturas <b>Felices</b></div>
     <p class="def">El método de lectura más completo para chicos de 2 a 11 años. 8 etapas + 1500 fichas, de la primera letra al primer cuento.</p>
+  </div>
+</section>
+
+<!-- ============ 3b · FOTOS REALES ============ -->
+<section class="real">
+  <div class="wrap">
+    <div class="kicker">Fotos reales, sin actores ni stock</div>
+    <h2>Así se ve en la práctica</h2>
+    <div class="real-grid">
+      <div class="ph"><img src="foto-actividad-1.webp" width="480" height="480" loading="lazy" decoding="async" alt="Nene señalando figuras en su ficha"></div>
+      <div class="ph"><img src="foto-actividad-2.webp" width="480" height="480" loading="lazy" decoding="async" alt="Nene trazando sílabas en su cuaderno"></div>
+      <div class="ph"><img src="foto-actividad-3.webp" width="480" height="480" loading="lazy" decoding="async" alt="Nena jugando con tarjetas de sílabas"></div>
+      <div class="ph"><img src="foto-actividad-4.webp" width="480" height="480" loading="lazy" decoding="async" alt="Nena señalando sílabas en la pizarra"></div>
+    </div>
+    <p class="real-note">Chicos reales usando las fichas en casa. Así de simple es cada actividad.</p>
   </div>
 </section>
 
